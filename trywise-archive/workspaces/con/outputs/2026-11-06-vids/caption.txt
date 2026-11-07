@@ -1,0 +1,11 @@
+Need a short visual for an idea? Google announced on November 5 that Google accounts and Workspace subscriptions can generate up to three 15-second videos per month in Vids at no cost, using Omni 1.2 Flash. Check availability and quota in your account.
+
+Our mug prompt is fictional and untested. Review the full result before sharing, and use reference images you have permission to upload. This free Vids allowance is separate from paid API usage.
+
+What would you try first: a product scene or a concept explainer?
+
+Sources:
+https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids/
+https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/
+
+#GoogleVids #AIVideo

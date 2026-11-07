@@ -1,0 +1,44 @@
+{
+  "status": "sent",
+  "run": "nov5-evening-xcode",
+  "topic": "Copilot in Xcode built-in assistant public preview",
+  "cover_hook": "Copilot, inside Xcode\u2019s assistant",
+  "audience": "Apple app developers checking whether the preview fits their setup",
+  "takeaway": "Check beta OS/editor requirements and validate generated explanations",
+  "hypothesis": "A requirements-first hook may produce useful saves among relevant developers; one format variable, no causal claim.",
+  "hashtags": [
+    "Xcode",
+    "SwiftDevelopment",
+    "GitHubCopilot"
+  ],
+  "tested": false,
+  "visual": "Original programmatically drawn laptop illustration, explicitly not a screenshot",
+  "destination": {
+    "organization": "6ae63280b965243d95d39b38",
+    "channel": "6ae636052f1f5ed648353cf5"
+  },
+  "source": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/",
+  "source_date": "2026-11-04",
+  "sha256": {
+    "01.png": "37ea112ac39e355c87ce69eb77c4a6a8305028a8a805fd769fe8cc29dc417b84",
+    "03.png": "aac8443d3be3036e159eba7ad51b42a11160ede8fcce8bcaba10a6e50552b5fc",
+    "02.png": "d36ff9a41bb7e25be2ac065845c0e6fd18e36fd9368ba4b28508534f93907926",
+    "05.png": "86daa25972c7d0e11507a6882551ac42f07fb72251b44964b3db8b25d2282312",
+    "04.png": "f74216501c2d2d443e0b067c0e8db48d8ed69c532de4bcdd558bcee579af470a"
+  },
+  "caption_digest": "13cf8b16e428ea34ea8eb87b98192bd1f220b7e579b97034589abb21384c6d5d",
+  "submitted": true,
+  "method": "Buffer signed-in composer / Now / Automatic",
+  "submission_intent_utc": "2026-11-06T04:44:52.323624+00:00",
+  "visual_check": "All five final rendered images inspected in contact sheet; no overflow; original topic illustration labeled.",
+  "buffer_id": "6aed5b572f69631c7d7ff44b",
+  "instagram_link": "https://www.instagram.com/p/DfYx38_lrFh/",
+  "buffer_ui_time": "Nov 5, 10:45 PM (America/Edmonton)",
+  "verified_utc": "2026-11-06T04:46:51.654962+00:00",
+  "metrics": {
+    "status": "unavailable immediately after publication",
+    "profile_visits": null,
+    "follows": null
+  },
+  "daily_count_observed": 1
+}

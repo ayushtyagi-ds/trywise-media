@@ -1,0 +1,10 @@
+{
+  "status": "needs_review",
+  "source": {"title": "Illustrative source", "url": "https://example.com/illustrative", "published_at": "2026-10-31"},
+  "slides": [
+    {"heading": "Turn meeting notes into action items", "body": "An illustrative example of a structured task you can ask an AI assistant to help with."},
+    {"heading": "Give it clear rules", "body": "Ask for a table of tasks, owners, and due dates. Instruct it to mark missing details instead of guessing."},
+    {"heading": "Check before sharing", "body": "Compare each row with the original notes. Use fictional or non-sensitive information when testing."}
+  ],
+  "caption": "An illustrative prompt idea: make a table of tasks, owners, and dates from your meeting notes. Check the result against the original notes. This is not a recorded test."
+}

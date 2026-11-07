@@ -1,0 +1,16 @@
+Trywise AI briefing | November 4, 2026
+Two selected announcements from November 3, checked November 4 (Edmonton).
+
+1. Learning: Google says teacher-led Guided Learning is rolling out globally in Classroom, using course materials and progress insights. Check school eligibility and settings; this is not a claim that every account already has access. Google also shared its own research, which we have not independently replicated.
+
+2. Building: GitHub Copilot is available in JetBrains Air. Cloud work requires an Air Teams-enabled business organization, a Copilot subscription and admin enablement. GitHub notes Air administrators cannot set Copilot spending limits within Air. Check usage terms before starting.
+
+Our takeaway: test one small, low-stakes task and verify the result. These are source summaries, not our hands-on reviews. Two strong updates selected; this is not an exhaustive news list. The cover is an original AI-generated concept illustration.
+
+Which would be more useful to you: guided study or delegated coding tasks?
+
+Primary sources (both November 3):
+https://blog.google/products-and-platforms/products/education/guided-learning-uk-japan/
+https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/
+
+#AINews #LearningWithAI

@@ -1,0 +1,11 @@
+{
+  "status": "needs_review",
+  "source": {
+    "url": "https://example.com/illustrative",
+    "domain": "example.com",
+    "title": "Illustrative source",
+    "published_at": "2026-10-31"
+  },
+  "slides": 3,
+  "note": "Draft: verify claims, source, and visuals before publishing."
+}

@@ -1,0 +1,11 @@
+A new AI coding session often means repeating yourself. One approach is to keep a short, reusable handoff of what happened and what comes next.
+
+The claude-mem project describes an automated version of this idea. On October 31, GitHub’s Trending page listed it among the day’s popular repositories. We haven’t installed or tested it, so this isn’t a recommendation or review.
+
+The handoff prompt on slide 4 is our own example. Check any memory tool’s storage, access and privacy settings before use.
+
+What context do you find yourself repeating to AI tools?
+
+Source: https://github.com/thedotmack/claude-mem
+
+Source: https://github.com/thedotmack/claude-mem

@@ -1,0 +1,34 @@
+{
+  "observed_local_date": "2026-11-02",
+  "provider": "Buffer Sent UI",
+  "provider_refresh": "7 hours ago (relative to browser observation)",
+  "posts": [
+    {
+      "instagram_link": "https://www.instagram.com/p/DfNF41voW_P/",
+      "published": "2026-11-01 09:49 America/Edmonton",
+      "reactions": 1,
+      "comments": 0,
+      "views": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "reach": 0,
+      "engagement_rate": null
+    },
+    {
+      "instagram_link": "https://www.instagram.com/p/DfK2-REGxDZ/",
+      "published": "2026-10-31 13:00 America/Edmonton",
+      "reactions": 2,
+      "comments": 0,
+      "views": 1,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "reach": 1,
+      "engagement_rate_provider": "200%"
+    }
+  ],
+  "profile_visits": null,
+  "follower_count": null,
+  "interpretation": "Provider displayed these zeros explicitly; refresh lags, no causal inference and post ages differ. No reliable performance winner."
+}

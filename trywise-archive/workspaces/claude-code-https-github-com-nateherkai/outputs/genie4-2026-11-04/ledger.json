@@ -1,0 +1,16 @@
+{
+  "status": "sent",
+  "topic": "Genie 4",
+  "destination": "@trywiseai",
+  "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+  "note": "Explicit user request to publish next post; separate publisher must defer while lock held.",
+  "images": {
+    "01.png": "87d44e4a6befe7b0e6b1db38e1b8fc028fe1272e5d39cd45884791dbf00de183",
+    "02.png": "072684cd40e203dbee5fe7efb54e5d8c80be55e255c4c08b7c80250f12ca3298",
+    "03.png": "65cc91705b8cb986252130ecc921796757447e37afb12c0c5cdd260ea4470d9c",
+    "04.png": "4cc76db8605713582dbc603adebe4c4a7a8be43bb343643ebdc789377fe78764",
+    "05.png": "bcecabda194eb534ba16af94928248209566df7f275ddc10db601159ce34e97f"
+  },
+  "instagram_link": "https://www.instagram.com/p/DfWB6G9jVc7/",
+  "published_local": "2026-11-04 21:08 America/Edmonton"
+}

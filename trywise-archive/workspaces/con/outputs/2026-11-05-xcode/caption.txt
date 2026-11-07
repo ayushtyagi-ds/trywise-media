@@ -1,0 +1,9 @@
+Building Apple apps? GitHub announced Copilot in Xcode’s built-in coding assistant on November 4. This public preview starts with Xcode 27.3 beta and requires macOS Tahoe 26.6 or later. All Copilot plans are supported, according to GitHub. The existing extension remains a separate option.
+
+The Swift prompt is an illustrative example, not a hands-on test. Check generated explanations and run your own tests before relying on a change.
+
+Would an assistant inside your editor help most with explanations or edge-case ideas?
+
+Source: https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/
+
+#Xcode #SwiftDevelopment #GitHubCopilot

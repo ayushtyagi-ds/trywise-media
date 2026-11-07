@@ -1,0 +1,13 @@
+Prefer speaking to typing long AI prompts? A local dictation tool can turn speech into text before you decide what to share.
+
+Handy describes on-device transcription and pasting the result into a text field. Its project lists Windows, macOS and Linux. This is a source-based explainer, not our hands-on review or an installation recommendation.
+
+Try the fictional study-planning prompt on slide 3. Check the transcript first: names, numbers and missing words matter. Local transcription does not make text private after you send it to an online AI service. Review permissions, downloads and optional processing settings before installing any tool.
+
+The cover is an original AI-generated illustration, not a product screenshot.
+
+Do you prefer dictating a first draft or typing it?
+
+Source checked November 2, 2026: https://github.com/cjpais/Handy
+
+#VoiceToText #AIProductivity

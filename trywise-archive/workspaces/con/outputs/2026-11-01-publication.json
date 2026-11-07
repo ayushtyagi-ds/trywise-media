@@ -1,0 +1,24 @@
+{
+  "local_date": "2026-11-01",
+  "status": "sent",
+  "buffer_post_id": "6ae697ea1ee172cd6dd31429",
+  "channel_id": "6ae636052f1f5ed648353cf5",
+  "topic": "Agent memory and manual session handoff",
+  "audience": "People using AI coding tools across multiple sessions",
+  "takeaway": "Save a concise handoff with uncertainty and privacy boundaries",
+  "hypothesis": "A relatable continuity problem and reusable prompt may generate more saves than announcement-only content; compare at similar post ages when metrics exist.",
+  "source_rechecked": "https://github.com/thedotmack/claude-mem",
+  "visual_check": "All five slides inspected; no clipping; 1080x1350. Claims attributed; no hands-on result claimed.",
+  "assets": {
+    "01.png": "a6f9a8163c7ce3499b5da1b707fcdfc718fd590cba2931d48420f30d24764b54",
+    "02.png": "7c79cb83fd290f040440d5543426f8918ff5a10a3f4b03a227b5b0ca3f50d5ee",
+    "03.png": "7fcfc7c03d487ba779ec6f9826fac560f733c42e448c9ff7cc352685b3ead65f",
+    "04.png": "cad0dfdcf8f7d8b885c8b0e3d1688b416ca51f3328c4d972944e0fdec3237db1",
+    "05.png": "347ded25895f5dd74256a90d545ab4ad62b4df0259c1af7909ef7bd544b85aa5"
+  },
+  "gemini_post": "6ae67f3d5c164391063bfb95 remains scheduled for 2026-11-04T01:25:00Z; do not duplicate.",
+  "content_digest": "b3e8f1a54e38b5cbdeed9cd986f10e6351db86eabc3563792a0fd6f1b6186c59",
+  "sent_at": "2026-11-01T15:49:41.913Z",
+  "instagram_link": "https://www.instagram.com/p/DfNF41voW_P/",
+  "verification": "Buffer get_post returned sent, no error, and public Instagram link."
+}

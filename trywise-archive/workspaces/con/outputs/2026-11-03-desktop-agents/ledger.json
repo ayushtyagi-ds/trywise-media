@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-03",
+  "status": "sent",
+  "topic": "Accessibility trees for desktop AI agents",
+  "cover_hook": "How AI finds the right button",
+  "hashtags": [
+    "AIAgents",
+    "DesktopAutomation"
+  ],
+  "audience": "Curious builders considering desktop automation",
+  "takeaway": "Read current controls, act, and verify the changed state.",
+  "hypothesis": "Test an illustrated mechanism explainer against practical-task content; no causal claims from tiny samples.",
+  "source": {
+    "domain": "github.com/vercel-labs",
+    "published_at": "checked Nov 3, 2026"
+  },
+  "source_url": "https://github.com/vercel-labs/agent-desktop",
+  "news_check": "Fresh GitHub/Google announcement search performed. A November 3 Dependabot APM candidate was not accessible on opening, so not used. This is an evergreen explainer, not breaking news.",
+  "channel_id": "6ae636052f1f5ed648353cf5",
+  "reserved_scheduled_post": "Gemini at 2026-11-04T01:25Z; preserve two-hour gap",
+  "buffer_post_id": "6aea6a44c98030ac3920c77b",
+  "images": {
+    "01.png": "5f93d9316d7145bf039d2efcac85bc06788f9a92cf42cfd384d9bc6694bfdfbc",
+    "02.png": "5d1b6b471d97880a97b768b0f28ef1a896897c7199eb5d991231f43ffcdad2ec",
+    "03.png": "f1b0aa400e2228ce6a0d5832f45870c9eb4d24019ad1bf5e66fc4c47bde6b671",
+    "04.png": "e83b21a9ac57a048f08428c30b64f6cc307d8736a938d894093023e4f90146ec",
+    "05.png": "12abb6ac1aac221e25803ff800b9fdab62a38b0f14c087fb03bb27192a7f3a6d"
+  },
+  "caption_sha256": "24997e8660a05ea09b4fc504267f2eecec98cc5d4d8a78e507e01e7b4ed08299",
+  "visual_check": "All five slides visually inspected, cover topic-specific and labelled concept illustration; no clipping.",
+  "quality_note": "Source and all five rendered images checked. Fictional example and generated concept cover labelled; no install/test claim.",
+  "instagram_link": "https://www.instagram.com/p/DfTCLAoDr77/",
+  "published_local": "2026-11-03 17:12 America/Edmonton",
+  "overlap_detected": "After submission, refreshed Buffer showed another distinct Claude API post sent at 17:11 (https://www.instagram.com/p/DfTCEylEbF5/). Stop further submissions. Gemini at 19:25 counts as third item today. Intended spacing missed due to concurrent activity.",
+  "verification": "Buffer Post Details explicitly says Published Nov 3, 5:12 PM; five assets and Instagram link."
+}

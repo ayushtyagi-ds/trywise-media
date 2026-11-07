@@ -1,0 +1,3 @@
+An illustrative prompt idea: make a table of tasks, owners, and dates from your meeting notes. Check the result against the original notes. This is not a recorded test.
+
+Source: https://example.com/illustrative

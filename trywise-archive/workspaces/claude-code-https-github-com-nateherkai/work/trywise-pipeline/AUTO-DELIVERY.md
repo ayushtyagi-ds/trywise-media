@@ -1,0 +1,17 @@
+# Experimental automatic delivery after review
+
+Not deployed or live tested. This optional worker can poll for locally reviewed drafts and transfer each reviewed carousel to a configured R2 public bucket, check the publicly served image bytes match the local approval, then submit to the configured Buffer channel. Once enabled, recording a local review can eventually result in a public post without another per-post prompt. The review button itself is not a publication authorization; the owner must separately create an explicit delivery policy and start the live worker. No such policy has been created or enabled by this project.
+
+**Requirements:** a dedicated authorized test Buffer account/channel, working free-tier or otherwise budgeted Gemini and R2 accounts, persistent private storage for the queue/drafts and both SQLite ledger tables, public R2 bucket/domain, scoped credentials, a process that stays online, and provider billing controls. R2 may require a subscription or payment method, and usage may incur charges. The existing Meta restriction and external account access remain unresolved. A max post count is not a CAD spending cap.
+
+**Risk and limitations:** it has only been tested with fake storage and Buffer clients. Public images are exposed during upload before social publication. Other authorized writers can alter or remove images after verification; content hashes and conditional upload do not ensure permanent immutability. Buffer acceptance is not Instagram publication. The worker has no alerting, remote review, delivery reconciliation, provider interoperability, measured costs or verified end-to-end deployment. Failed upload or ambiguous Buffer outcome halts the loop for manual investigation. A crash can leave `pending`; no automatic retry is offered. R2 may contain partial public media. Do not delete/reset the ledger to retry; all workers must share the same durable ledger and backing files. Duplicate content with a different review digest may still be posted. Provider costs, privacy and policy requirements are your responsibility and no CAD 50 hard cap is enforced.
+
+**Only after verifying all requirements and explicitly deciding to enable automatic posting**, create a private JSON policy file outside source control:
+
+```
+{"authorize_reviewed_to_configured_channel":true,"account_id":"R2_ACCOUNT_ID","bucket":"BUCKET_NAME","public_base":"https://PUBLIC_IMAGE_HOST","channel_id":"BUFFER_CHANNEL_ID","max_posts_per_day":1}
+```
+
+This is blanket authorization to queue reviewed local drafts to that exact channel and make their images public. Verify source facts and rights before clicking review. Set `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, and `BUFFER_API_KEY` securely using the chosen host's secret manager, never in chat. See MEDIA_HOSTING.md, REVIEWED-PUBLISHING.md and WORKER.md. After deliberately configuring the policy and secrets, an operator can run `delivery_loop.py --db QUEUE_DB --root DRAFT_ROOT --policy PRIVATE_POLICY --ledger PERSISTENT_LEDGER --run-live --ack-public-media-and-cost` once; adding `--loop` polls while the process runs. Test only on an authorized test account first. There is no timer or service enabled automatically. Do not expose the localhost-only reviewer on the internet.
+
+Offline tests simulate content review, upload, public fetch, Buffer response, concurrent repeat protection, and timeout. They cannot prove actual APIs, hosting, permission, safety, uptime, or published outcome.

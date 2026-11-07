@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-05",
+  "status": "deferred_source_verification",
+  "destination": {
+    "organization": "6ae63280b965243d95d39b38",
+    "channel": "6ae636052f1f5ed648353cf5"
+  },
+  "submitted": false,
+  "buffer_observation": {
+    "sent_count": 9,
+    "queue_count": 0,
+    "draft_count": 2,
+    "latest_date": "2026-11-04",
+    "additional_topics_already_sent": [
+      "OpenAI Pierre acquisition",
+      "Google Genie 4"
+    ],
+    "links": [
+      "https://www.instagram.com/p/DfWIx3IFldb/",
+      "https://www.instagram.com/p/DfWB6G9jVc7/"
+    ]
+  },
+  "ideas_reviewed": [
+    "desktop agents (already sent)",
+    "Handy (already sent)",
+    "memory (already sent)",
+    "Gemini Sheets citations (evergreen candidate, not tested)",
+    "Gemini file editing (already sent)"
+  ],
+  "research": {
+    "sources": [
+      "https://www.anthropic.com/news",
+      "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/"
+    ],
+    "finding": "Search snippets did not establish distinct Nov 4\u20135 event dates. Direct Anthropic newsroom showed individual stories dated Oct 28 or earlier despite a newer page header. Do not use page header or crawl date as announcement date. No verified roundup ready."
+  },
+  "next_step": "Verify fresh individual primary announcements; consider source-checking the existing Sheets citations practical idea rather than padding the roundup. No claim of a hands-on test."
+}

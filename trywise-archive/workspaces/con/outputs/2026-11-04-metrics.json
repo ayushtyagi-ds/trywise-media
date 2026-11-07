@@ -1,0 +1,44 @@
+{
+  "observed_local_date": "2026-11-04",
+  "provider": "Buffer Sent UI",
+  "provider_refresh": "7 hours ago",
+  "gemini": {
+    "views": 3,
+    "reach": 1,
+    "reactions": 1,
+    "comments": 0,
+    "shares": 0,
+    "saves": 0,
+    "follows": 0
+  },
+  "desktop_agents": {
+    "views": 0,
+    "reach": 0,
+    "reactions": 1,
+    "comments": 0,
+    "shares": 0,
+    "saves": 0,
+    "follows": 0
+  },
+  "claude_threads": {
+    "views": 4,
+    "reach": 1,
+    "reactions": 1,
+    "comments": 0,
+    "shares": 0,
+    "saves": 0,
+    "follows": 0
+  },
+  "handy": {
+    "views": 0,
+    "reach": 0,
+    "reactions": 1,
+    "comments": 0,
+    "shares": 0,
+    "saves": 0,
+    "follows": 0
+  },
+  "profile_visits": null,
+  "follower_count": null,
+  "interpretation": "Provider explicitly displayed zeros but ingestion lags. Different post ages and tiny sample: no causal conclusion."
+}

@@ -1,0 +1,30 @@
+{
+  "source": {
+    "title": "claude-mem: persistent context across sessions",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "published_at": "observed 2026-10-31"
+  },
+  "slides": [
+    {
+      "heading": "When AI forgets your project",
+      "body": "A tool called claude-mem is getting attention for a simple idea: make useful context available across coding sessions."
+    },
+    {
+      "heading": "Why it matters",
+      "body": "A new session can start without the decisions, fixes or failed approaches from the last one. Repeating context costs time."
+    },
+    {
+      "heading": "What the project says",
+      "body": "Claude-mem says it captures session activity, compresses it with AI and brings relevant context into future sessions."
+    },
+    {
+      "heading": "Try the idea manually",
+      "body": "Before ending a session, ask: \u2018Summarize the goal, decisions, unresolved bugs and next steps. Mark anything uncertain.\u2019 Save the result where you control it."
+    },
+    {
+      "heading": "Memory needs boundaries",
+      "body": "Check what a tool stores and where it sends data before connecting a project. Don\u2019t put secrets in a handoff. We haven\u2019t tested claude-mem."
+    }
+  ],
+  "caption": "A new AI coding session often means repeating yourself. One approach is to keep a short, reusable handoff of what happened and what comes next.\n\nThe claude-mem project describes an automated version of this idea. On October 31, GitHub\u2019s Trending page listed it among the day\u2019s popular repositories. We haven\u2019t installed or tested it, so this isn\u2019t a recommendation or review.\n\nThe handoff prompt on slide 4 is our own example. Check any memory tool\u2019s storage, access and privacy settings before use.\n\nWhat context do you find yourself repeating to AI tools?\n\nSource: https://github.com/thedotmack/claude-mem"
+}

@@ -1,0 +1,15 @@
+Messy meeting notes? Try turning them into a clear action list.
+
+Copy this prompt:
+
+Turn these notes into a table with: Task | Owner | Due date. Use only information in the notes. If an owner or date is missing, write “Not specified.” Do not invent details.
+
+Notes: [paste here]
+
+Before you share the result, check the names and dates against your notes. AI can still make mistakes—even with a clear prompt. Use fictional or non-sensitive notes unless you're comfortable with the tool's data policies.
+
+The notes and table in this carousel are illustrative examples, not a recorded tool test.
+
+Save this for your next meeting. What AI task should Trywise test next?
+
+#TrywiseAI #AITips #Productivity #AIForWork

@@ -1,0 +1,11 @@
+{
+  "status":"needs_review",
+  "source":{"title":"Edit and preview documents directly in Gemini","url":"https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/","published_at":"2026-10-29"},
+  "slides":[
+    {"heading":"Gemini can edit files in chat","body":"Google announced new ways to create, preview and edit files directly in the Gemini app."},
+    {"heading":"What can you do?","body":"Open a file in chat, make edits, highlight text to ask questions, or ask Gemini to refine it."},
+    {"heading":"Web or mobile?","body":"Google says PDF preview and editing work on web and mobile. The other listed formats are web-only."},
+    {"heading":"Try it with a sample","body":"Open Gemini and try a non-sensitive document. Check the resulting edits and any important details yourself."}
+  ],
+  "caption":"Google announced new file editing and preview features in the Gemini app on October 29, 2026. PDF preview and editing are available on web and mobile; Google says the other listed formats are web-only. Check your account for access and verify AI-made changes. This is a summary of Google's announcement, not a hands-on test."
+}

@@ -1,0 +1,15 @@
+How does an AI agent find the right button in a desktop app? One route is to read the app’s accessibility structure: named controls and their roles.
+
+Vercel Labs’ agent-desktop describes a tool that exposes this structure to an agent. The agent chooses an action, then reads the interface again. The project says the AI model lives in the calling agent, not inside this tool.
+
+Slide 3 uses a fictional notes app. We have not installed or tested agent-desktop, and this is an explainer rather than an installation recommendation. Support and permissions vary by platform.
+
+Useful takeaway: after a screen changes, inspect the current state and check the result before the next action. Desktop snapshots and logs may contain private information.
+
+The cover is an original AI-generated concept illustration, not a real interface.
+
+Which everyday desktop task would you want an agent to handle reliably?
+
+Source checked November 3, 2026: https://github.com/vercel-labs/agent-desktop
+
+#AIAgents #DesktopAutomation

@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "thread": {
+    "id": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+    "kind": "codex",
+    "hostId": "local",
+    "title": "Review Nate Herk’s repositories",
+    "preview": "Claude Code\nhttps://github.com/nateherkai\nif i gave you this link what you can do about it i want some info about this account repos?\n\nRan 3 commands\nPulled it straight from GitHub’s public API. Here’s what’s there.\n\nAccount: nateherkai — “Nate Herk”\nCreated 2026-01-09, 2,158 followers, following 0, no bio/company/location/email set\n18 public repos, 0 gists\nProfile is basically an AI-tooling content/course channel — most repos are Claude Code / Codex skills, plugins and student templates\nRepos, by stars\nStars\tForks\tRepo\tLang\tWhat it is\n4,173\t600\tscroll-craft\tJS\tAgent skill for scroll-driven immersive websites; also a Claude Code plugin\n2,336\t578\therk-edit-kit\tHTML\tVideo/Reels/Shorts editing with Codex or Claude Code — 15 skills, transcript-driven cuts, 406 motion-graphics cards\n1,773\t505\tAIS-OS\tJS\t“AI Operating System” starter kit; skills /onboard, /audit, /link, /level-up, /3d-brain\n1,321\t306\troast-room\tJS\tSeven AI advisor personas debate a business decision live in Claude Code\n748\t204\ttoken-dashboard\tPython\tTurns Claude Code JSONL transcripts into local cost/hotspot analytics\n402\t126\tsnagtime\tTS\t—\n106\t24\thuman-speak\tPython\t—\n66\t19\ta-bunch-of-skills\tHTML\tCustom Claude Code skills collection\n49\t5\tclaude-code-mods\tJS\tCache Keeper, Recording Mode, Goal Meter, Collision Guard\n47\t15\thyperframes-video-pipeline\tHTML\tDeprecated — merged into his student kit\n32\t10\tgpt-image-2-vs-nano-banana-2\tTS\tImage-model benchmark judged by Claude Opus 4.7; course template\n17\t6\tadvisor-tool-demo\tHTML\tDemo of Anthropic’s Advisor Tool (beta), cost/quality across Haiku/Sonnet/Opus\n3–7 each\t\tclaudewebtest, instant-ugc-app, brand-assets, fitcoach-ai-app, blender-website, dash\tmixed\tSmall/undescribed side projects from Jan–Mar 2026\nTotal ≈ 12.1k stars across the account, and the top five repos are ~85% of it. Nothing is archived or a fork. Activity pattern: a burst of small app repos in Jan–Mar 2026, then from April onward the big skill/plugin releases, with the most recent being roast-room (Oct 10) and claude-code-mods (Oct 2).\n\nWhat else I can do with a link like this, if useful: clone any repo and read/review the actual code, summarize a specific skill’s implementation, diff one against your own portal’s setup, pull its commit history or contributors, check open issues/PRs, or list who it depends on. Just name the repo — scroll-craft and token-dashboard are the two most likely to be relevant to what you’re building.\n\nhe is running a lot of ai things can you check can you run these stuff just yes or no or you need something additonal?\n\nRan 5 commands\nChecked your machine against what each repo actually needs.\n\nYour toolchain: Node 24.7, npm 11.5, Python 3.13, git ✅ — missing ffmpeg/ffprobe, gh, uv, deno, bun. No AI provider API keys set in the environment.\n\nRepo\tCan I run it?\tWhat’s missing\ntoken-dashboard\tYes\tNothing. Pure Python 3.8+, no pip install, no keys. Reads your own Claude Code sessions — would work on this repo’s history right now\nclaude-code-mods\tYes\tNothing. Plain JS mods, install as a Claude Code plugin\nhuman-speak\tYes\tNothing. Skill files + a Python validator script\na-bunch-of-skills\tYes\tNothing — it’s just skill markdown + scripts\nAIS-OS\tYes\tNothing. Markdown context framework + JS scripts\nroast-room\tYes, partly\tRuns in “viewer” mode with zero keys (default). Its self-driving api mode needs ANTHROPIC_API_KEY (~25 calls/council); /newroaster portraits need a KIE_AI_API_KEY\nscroll-craft\tYes, partly\tFull build works bring-your-own-assets with no key. AI image/video generation needs KIE_AI_API_KEY (paid — ~520 credits for a six-act page)\nsnagtime\tYes, probably\tFull Next.js + Prisma app. Needs npm install, SQLite demo DB, and a few generated secrets from .env.example. No external AI keys; Google Calendar is opt-in\nherk-edit-kit\tNo, not yet\tNeeds FFmpeg + ffprobe (missing) and Chrome/Chromium. Its no-footage fixture then runs keyless; real transcription needs ELEVENLABS_API_KEY (or OpenAI/Groq), generation needs KIE_API_KEY. Also a 460 MB clone\nhyperframes-video-pipeline\tSkip\tDeprecated, merged into his student kit\nthe 6 small ones\tn/a\tUndescribed personal side projects, nothing to run\nShort version: 5 of them I can run right now with nothing added. 3 more run in their free/keyless mode and only need paid keys for AI generation. snagtime needs a normal install + local secrets. Only herk-edit-kit is actually blocked, on brew install ffmpeg.\n\nWant me to start with token-dashboard? It’s zero-setup and would immediately show you where tokens are going on this portal project.\n\nthen how these people earn that much?\n\nSearched web YouTube RPM 2026 tech AI finance niche revenue per 1000 views creator ad share vs Instagram X payouts 9 results\nFair question — and the answer is that they don’t earn it where you’re planning to post.\n\nThe platform gap is roughly 1,000×\nPlatform\tWhat it pays\nYouTube (tech/AI)\t~$5–20 per 1,000 views, typically ~$13 US\nX\t~$8–30 per million impressions\nInstagram\teffectively nothing for feed posts\nSame unit: YouTube pays about $13,000 per million views. X pays about $20. That’s not a gap you optimise your way across — it’s a different business.\n\nSo when you see an AI automation person doing well, they’re a YouTuber. Instagram and X are leftovers they repurpose into, which is literally what Nate’s pipeline does — the YouTube video is the asset, the social posts are offcuts.\n\nBut even YouTube ads are the small line\nRough estimate of Nate’s stack — these are inferred from public numbers, not verified:\n\nSource\tEstimate\nAAS+ paid community (~3,100–3,500 × $99/mo)\t~$300K+/mo\nYouTube AdSense (43.7M lifetime views, ~$13 RPM)\t~$40K/mo\nSponsorships (Hostinger, ClickUp, Lovable, ElevenLabs, n8n)\tsizeable, lumpy\nAffiliate/referral (Blotato, n8n, Hostinger)\trecurring\nClient work (“Blotato is also a client of mine”)\tproject-based\nInstagram + X\t≈ $0\nThe community is the business. Everything else is marketing for it. ~90% of the money comes from a thing that isn’t on any social platform.\n\nThe number that should decide your strategy\n450,000 free community members → ~3,100 paying = 0.7% conversion.\n\nRun that backwards for a $10K/month target:\n\nLow-ticket model (his): $10K/mo ÷ $99 = ~100 members → at 0.7% needs ~14,000 free members → needs ~100K+ YouTube subscribers\nHigh-ticket model (yours): $10K/mo = 2 client contracts at $5K → at a similar conversion rate, needs ~400 engaged followers\nSame money. About 250× less audience. That’s the entire reason I keep pointing you at expertise content over news — not taste, arithmetic.\n\nTwo things nobody mentions\nTiming. He started September 2024 and hit 230K in nine months. That was the n8n/AI-agent hype window, as an early mover in an exploding category with almost no competition. There are now thousands of AI automation channels. The model still works; that arbitrage doesn’t repeat.\n\nSurvivorship. For every Nate, thousands ran the identical playbook and got nothing. You only ever see the winner, which makes the strategy look far more reliable than it is.\n\nThe one transferable lesson\nHis content is an ad for his product, and they’re the same subject. Teach n8n → sell an n8n community. Teach Blotato → earn the affiliate commission. The content creates the exact desire his offer satisfies.\n\nThis is the real reason tech news can’t pay: there’s nothing to sell at the end of “OpenAI announced a thing.” No offer fits it. Whereas “here’s the RLS trap that silently disabled our access control” ends naturally at “…and I do this for hire” — and your contact page already exists.\n\nWant me to map your specific path to a first $1,000, or skip ahead and start building?\n\nThese people don't earn on Instagram or X — YouTube pays ~$13 per 1,000 views where X pays ~$8–30 per million, and the real money is a paid community: roughly 3,100 members at $99/mo. That model needs a ~450K free funnel to feed it.\n\ncan you do something about this????????",
+    "status": {
+      "type": "idle"
+    },
+    "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+    "createdAt": 1793428141,
+    "updatedAt": 1794029992
+  },
+  "page": {
+    "order": "newest_first",
+    "limit": 10,
+    "nextCursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":87,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}",
+    "hasMore": true
+  },
+  "turns": [
+    {
+      "id": "01a190bc-afe4-7af1-92ca-83b3cc8073f5",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429647,
+      "completedAt": 1793429651,
+      "durationMs": 3886,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190bc-b015-7441-8bf1-d51e7f6a0bdc",
+          "content": [
+            {
+              "type": "text",
+              "text": "give me other names like that\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae59090c540819bad0d0283376ac0cc",
+          "text": "Here are some names with the same simple, practical feel:\n\n- **Prompt to Done** — from an idea to a finished task\n- **Prompt to Product** — creating useful things with AI\n- **Prompt to Reality** — bringing ideas to life\n- **From Prompt to Proof** — testing what AI can actually do\n- **Prompt and Build** — making tools and workflows\n- **Ask to Action** — turning a question into something useful\n- **Idea to Output** — broad enough for AI, creativity, and automation\n- **Prompt in Practice** — showing AI used on real tasks\n- **Click to Create** — short and accessible\n- **The Prompt Effect** — a little more futuristic\n\nMy top three for your channel are **Prompt to Done**, **Ask to Action**, and **Prompt to Result**. I’d pick **Prompt to Done**: it’s short, easy to say, and fits the idea of AI completing real tasks.\n\nThese are name ideas; I haven’t checked whether their handles are available.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190bc-6cd5-74f3-abb4-bbd69d2e2180",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429630,
+      "completedAt": 1793429632,
+      "durationMs": 2026,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190bc-6d30-7240-91aa-d1cee3a84199",
+          "content": [
+            {
+              "type": "text",
+              "text": "Prompt to result or something cool easy to remember\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae5907f7a58819bbc40bef19080e336",
+          "text": "**Prompt to Result** is a strong choice. It’s clear, easy to remember, and tells people what the channel is about: using AI to get useful results.\n\nTry:\n\n- **Channel name:** Prompt to Result\n- **Handle:** `@prompttoresult`\n- **Tagline:** “Real prompts. Real results.”\n\nIf the handle is taken, try `@prompt2result` or `@prompttoresultai`. I haven’t verified their availability, so YouTube will need to confirm.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190bb-caaf-76f1-ac20-c30592824618",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429588,
+      "completedAt": 1793429594,
+      "durationMs": 6214,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190bb-caed-7bc1-bc17-7c25e9d594a5",
+          "content": [
+            {
+              "type": "text",
+              "text": "handle name not avaliable give me other names \n"
+            }
+          ]
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae59055ea20819bbd7c370486d461aa",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae5905613b4819ba2d5c402cea8ba84",
+          "text": "I’ll look for alternatives that keep the same feel and check for obvious existing uses.",
+          "phase": "commentary"
+        },
+        {
+          "type": "webSearch",
+          "id": "exec-edc4dbbf-bda7-4a6b-bceb-204180aa7cca",
+          "query": "\"Beyond the Prompt\" AI youtube channel ...",
+          "action": {
+            "type": "search",
+            "query": null,
+            "queries": [
+              "\"Beyond the Prompt\" AI youtube channel",
+              "\"Beyond Prompting\" AI channel",
+              "\"After the Prompt\" AI youtube",
+              "\"Prompt to Practice\" AI channel"
+            ]
+          }
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae59058b288819bb6018bdf88292319",
+          "text": "I found that **Beyond the Prompt is already the name of an AI show**, so choosing a different name is a good idea. I should have checked that more carefully before recommending it. [Existing show](https://www.beyondtheprompt.ai/)\n\nHere are some fresh options for you to try:\n\n| Channel name | Handle to try |\n|---|---|\n| **Prompt to Practice** | `@prompttopractice` |\n| **AI After Hours** | `@aiafterhours` |\n| **The Prompt Workshop** | `@thepromptworkshop` |\n| **AI Task Lab** | `@aitasklab` |\n| **The Practical Prompt** | `@thepracticalprompt` |\n\nMy favourite is **Prompt to Practice**: it fits your idea of taking AI ideas and showing people how to use them.\n\nI haven’t confirmed that these handles are available—YouTube will tell you when you enter them. If your favourite is taken, tell me which one and I’ll help find another.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190bb-3c94-70f0-abc0-11bae102ec9a",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429552,
+      "completedAt": 1793429557,
+      "durationMs": 5527,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190bb-3cda-7ea0-962b-ea9a39ff5273",
+          "content": [
+            {
+              "type": "text",
+              "text": "Beyond the Prompt The AI Workbench in both select one\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae59034a140819baa0e729acca3672a",
+          "text": "I’d choose **Beyond the Prompt**.\n\nIt’s memorable and gives you room to cover AI tools, experiments, automation, and tutorials as the channel grows.\n\n- **Channel name:** Beyond the Prompt\n- **Handle to try:** `@beyondtheprompt`\n- **Tagline:** “Putting AI to work, one test at a time.”\n\nYou can keep using **trywiseai@gmail.com** to manage it. Before creating the channel, check whether the handle is available on YouTube and Instagram—we haven’t verified that yet.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190ba-729d-7d60-8aab-0cfbebec68e5",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429500,
+      "completedAt": 1793429504,
+      "durationMs": 4156,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190ba-73de-7732-99ef-0833204caf9f",
+          "content": [
+            {
+              "type": "text",
+              "text": "give me different name though please trywise ai look im just trying but im stupid i just create a email with `Trywise AI` [**trywiseai@gmail.com**](mailto:trywiseai@gmail.com)  \n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58ffe0bac819ba33222ec5c8ee34e",
+          "text": "You’re not stupid—you created the email using the name I suggested. And you’re **not stuck with that name**: your YouTube channel can have a different name from your Google account. You can keep **trywiseai@gmail.com** as the login while we choose a better public brand.\n\nHere are a few directions:\n\n| Name | Feel | What it suggests |\n|---|---|---|\n| **AI Field Notes** | Thoughtful, practical | Real observations from testing AI |\n| **Prompt & Proof** | Sharp, memorable | Testing prompts and showing the result |\n| **The AI Workbench** | Hands-on | Building and trying useful workflows |\n| **Beyond the Prompt** | Broad, modern | What happens after you ask AI to do something |\n| **AI, Put to Work** | Clear, direct | Practical AI for everyday tasks |\n\nMy favourite for your idea is **The AI Workbench**. It makes sense for a faceless channel where viewers watch tools being tested and workflows being built.\n\nThese are **creative suggestions, not verified available names**. Before you create the channel, we should check the name and matching handles on YouTube, Instagram, X, and Facebook.\n\nWhich one feels closest to what you want? Or tell me the feeling you prefer—**professional, futuristic, simple, or fun**—and I’ll find more options.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190b8-b352-7cb1-b1d9-c4ee6ec22104",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429386,
+      "completedAt": 1793429394,
+      "durationMs": 7986,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190b8-b4ab-7f40-ad8f-a702031fff96",
+          "content": [
+            {
+              "type": "text",
+              "text": "how to create a creator account on youtube?\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58f8c0b60819b9c59da3e1d99c10b",
+          "text": "I’ll check YouTube’s current setup steps so you can create the channel under your new brand email.",
+          "phase": "commentary"
+        },
+        {
+          "type": "webSearch",
+          "id": "exec-9d15bb40-947b-4cf0-8415-d73b979d9915",
+          "query": "site:support.google.com/youtube create channel business another name YouTube channel create ...",
+          "action": {
+            "type": "search",
+            "query": null,
+            "queries": [
+              "site:support.google.com/youtube create channel business another name YouTube channel create",
+              "site:support.google.com/youtube create channel handle youtube"
+            ]
+          }
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58f8fb540819b9bb9f63c12bf98cd",
+          "text": "YouTube doesn’t require a separate “creator account.” You create a **YouTube channel** using a Google account, then manage it through YouTube Studio.\n\nFor **Trywise AI**, I suggest creating a channel with a business or brand name. It can have additional managers later if you need them.\n\n1. Sign in to [YouTube](https://www.youtube.com/) on a computer or mobile browser with the Gmail account you want to use.\n2. Open your [channel list](https://www.youtube.com/channel_switcher).\n3. Select **Create a new channel**.\n4. Enter:\n   - **Name:** `Trywise AI`\n   - **Handle:** `@trywiseai`, if available\n   - **Profile picture:** You can add one now or make one later.\n5. Click **Create channel**.\n\nThat’s it—creating the channel is free. [YouTube’s official instructions](https://support.google.com/youtube/answer/1646861)\n\nAfterward, open [YouTube Studio](https://studio.youtube.com/) and go to **Customization → Profile**. You can add this description:\n\n> We test AI tools and workflows on everyday tasks. Clear demos, honest results, and practical takeaways.\n\nYou don’t need an API key or paid subscription to create the channel. Once it’s created, send me the channel link or tell me which handle you got, and we can plan the branding and first video around it.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190b1-4e16-77c0-b832-5cd46b023983",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793428901,
+      "completedAt": 1793428905,
+      "durationMs": 3693,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190b1-4f1e-7601-aa6e-08d667b2cb6d",
+          "content": [
+            {
+              "type": "text",
+              "text": "should i create a new email for this too?\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58da786c8819b84d50a48bddde5bb",
+          "text": "**Yes, I recommend creating a separate email for the channel.** It will keep account logins, creator notifications, and future business enquiries separate from your personal inbox.\n\nA free Gmail account is enough to start. It can also be the Google account used to create your YouTube channel. Something like **trywiseai@gmail.com** would work if it’s available; otherwise, try a close variation that’s easy to read and remember.\n\nUse it for YouTube, Instagram, and the other brand accounts. Enable two-factor authentication and add a recovery method you control. You don’t need to share your password with me.\n\nLater, if the brand grows, we can look at an address using your domain, such as **hello@ayushtyagi.dev**. There’s no need to set that up or pay for it now.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190af-9476-76b2-b726-d2db423c53da",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793428788,
+      "completedAt": 1793428809,
+      "durationMs": 21588,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190af-950f-72c3-8a24-a7ee9a3d8f87",
+          "content": [
+            {
+              "type": "text",
+              "text": "first tell me the channel name for everything please can you do that do a proper research what topics should i touch first what should i do tell me \n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58d35b148819b8583a129a0789b86",
+          "text": "I’ll research the current AI content landscape and suggest a channel name, positioning, and first topics that fit a faceless, mostly automated workflow and your CAD $50 budget.",
+          "phase": "commentary"
+        },
+        {
+          "type": "webSearch",
+          "id": "exec-3b8d2c24-db6f-404c-a3bd-598385fa8bb4",
+          "query": "2026 AI tools youtube channel tutorials automation beginners competition AI explained ...",
+          "action": {
+            "type": "search",
+            "query": null,
+            "queries": [
+              "2026 AI tools youtube channel tutorials automation beginners competition AI explained",
+              "site:youtube.com AI tools tested workflow tutorial shorts productivity 2026",
+              "2026 small business AI adoption common uses survey generative AI",
+              "\"AI Actually Works\" AI tools channel",
+              "\"The AI Test Bench\" AI tools"
+            ]
+          }
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae58d39322c819b8b1d12acfe73f55d",
+          "summary": []
+        },
+        {
+          "type": "webSearch",
+          "id": "exec-bdf9b83b-e0ef-460b-877a-88f4ed479273",
+          "query": "\"Taskproof AI\" ...",
+          "action": {
+            "type": "search",
+            "query": null,
+            "queries": [
+              "\"Taskproof AI\"",
+              "\"Trywise AI\" tools",
+              "\"Prompt to Proof\" AI",
+              "\"TaskProof\" AI"
+            ]
+          }
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58d3bada4819bb07549705b2c4d34",
+          "text": "My recommendation is **Trywise AI**.\n\nIt’s short, easy to say, and fits a channel that **tries AI tools on real tasks and shows whether they’re worth using**. It also leaves room to grow into tutorials, comparisons, templates, and a community later.\n\n**Suggested handle:** `@trywiseai`  \n**Tagline:** “AI tools, tested on real work.”  \n**Bio:** “We test AI tools and workflows on everyday tasks. Clear demos, honest results, and practical takeaways.”\n\nI searched for the name, but I **haven’t confirmed that the handle is available** on YouTube, Instagram, X, or Facebook, or completed a trademark search. Check those before committing. If it’s taken, try `@trywise.ai` or `@trywiseaitools` where the platform allows it.\n\nYour domain could eventually be **ai.ayushtyagi.dev** or link to the channel from your portfolio. There’s no need to change it now.\n\n## What the channel should cover\n\nI recommend targeting **people who want to use AI for work but don’t know which tools are actually useful**: freelancers, small business owners, creators, and curious beginners.\n\nThere is evidence that these are useful problems to cover. US Census research identifies **writing, document analysis, and information search** among leading generative AI tasks in businesses. A UK government survey also found that a lack of a clear business case is a barrier for many non-adopters. That suggests an opportunity for clear demonstrations with visible results—though the research does **not** prove a new channel will grow. [US Census research](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html) · [UK AI adoption survey](https://www.gov.uk/government/publications/ai-adoption-survey-2026/ai-adoption-survey-report-2026-executive-summary)\n\nI’d use three recurring formats:\n\n1. **“Can AI do this task?”** Show the task, the actual test, the result, and what needed fixing.\n2. **“Free vs. paid”** Give two tools the same task and compare their output and real cost.\n3. **“Build this workflow”** Show a repeatable process viewers can try themselves.\n\nThis is an editorial choice: I think **showing the test and its limitations** gives viewers a reason to trust and return to the channel. We would need to test that with real videos.\n\n## Your first 12 videos\n\nThese are **proposed tests**, not claims that the tools succeeded. We’d run each one before writing its final conclusion.\n\n| Week | Video idea | What viewers see |\n|---|---|---|\n| 1 | Can AI turn a messy document into a clean spreadsheet? | Sample document → extracted table → mistakes |\n| 1 | I gave two AI tools the same email-writing task | Same input → two outputs → comparison |\n| 1 | Can AI summarise a long PDF without missing key details? | Source document → summary → fact check |\n| 2 | I used AI to turn meeting notes into an action list | Sample notes → tasks → what needed correction |\n| 2 | Can a free AI tool make a useful presentation? | Prompt → slides → honest review |\n| 2 | Three ways to improve an AI response | Same task → three prompts → results |\n| 3 | Can AI clean up a messy spreadsheet? | Sample data → cleaned output → verification |\n| 3 | I asked AI to research a topic—then checked its sources | Claims → cited sources → errors or successes |\n| 3 | Can AI make social posts from one article? | Original article → draft posts → edits |\n| 4 | I tested an AI tool for creating a simple website | Brief → generated page → working result |\n| 4 | Free vs. paid AI for one practical task | Identical inputs → outputs → cost and verdict |\n| 4 | What went wrong in our first month of AI tests? | Real failures, corrections, and lessons |\n\nUse **made-up or public sample data** for demonstrations. That makes the videos reproducible and avoids exposing someone’s private information.\n\n## What each video looks like\n\nFor a 30–60 second Short or Reel:\n\n> **Hook:** “Can AI turn this messy invoice into a spreadsheet?”  \n> **Test:** Show the sample invoice, tool, and instruction.  \n> **Result:** Show the output and check a few fields against the source.  \n> **Verdict:** Explain what worked, what didn’t, and whether a free version was enough.  \n> **Close:** “What should we test next?”\n\nThe screen recording and captions carry the story; an AI voice narrates it. No face is needed.\n\n## How I would launch it\n\n**First month: YouTube Shorts + Instagram Reels, three videos a week.** Post the same core video with a caption suited to each platform. Reserve the X and Facebook handles if available, but keep them optional until production is working.\n\nI would use the first month as a test:\n\n- **After 3 videos:** Check whether the videos look clear and the production process is affordable.\n- **After 12 videos:** Compare which topics hold attention and which prompt useful comments.\n- **Then:** Make more videos on the strongest topics and consider one longer YouTube tutorial from a successful Short.\n\nThe system can help research, draft, narrate, edit, and prepare uploads. The demonstrations still need to be **actually run and checked**. I’d start with your review before publishing and automate more once the results are reliable.\n\nFor the **CAD $50 budget**, I would spend **$0 initially** on subscriptions while we make the first sample. Then we can price the specific AI and voice services we need, including tax and exchange rates, before choosing any paid tools.\n\nMy first pick is **Trywise AI**. If you like it, the next practical step is to check its handles and produce the first sample: **“Can AI turn a messy document into a clean spreadsheet?”**",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190ae-6018-79d3-a8c2-8a4bf7b9cefd",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793428709,
+      "completedAt": 1793428719,
+      "durationMs": 10318,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190ae-612a-78e2-b4a7-10676561cdba",
+          "content": [
+            {
+              "type": "text",
+              "text": "yes i do my portfolio website, we do it later though but what exactly i need though \n50 cad \none instagram account \none twitter account \none facebook or something what should and where should i put it what api or something like that you do need \nyoutube or something?\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58ce71a44819b94cf8fe09ef3b54d",
+          "text": "I’ll put together a practical checklist for a CAD $50 monthly budget, including which accounts are worth creating first and which connections the automation would actually need.",
+          "phase": "commentary"
+        },
+        {
+          "type": "webSearch",
+          "id": "exec-6bdc18b4-fda9-4f85-a27d-6f951700966f",
+          "query": "site:developers.facebook.com instagram content publishing api professional account facebook page ...",
+          "action": {
+            "type": "search",
+            "query": null,
+            "queries": [
+              "site:developers.facebook.com instagram content publishing api professional account facebook page",
+              "site:developers.google.com youtube data api upload oauth quota",
+              "site:developer.x.com pricing api free post X 2026",
+              "site:help.instagram.com connect instagram professional account facebook page publishing"
+            ]
+          }
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58cea2e98819b94ed883f2b5ec767",
+          "text": "Yes. With **CAD $50 per month**, I’d start with **YouTube and Instagram**, then add Facebook and X only if we see a reason to. One video can be adapted for YouTube Shorts and Instagram Reels, so you don’t need to produce separate content for each platform.\n\nHere’s what you’d need:\n\n| What | Needed now? | Purpose |\n|---|---|---|\n| **Google account + YouTube channel** | Yes | Publish Shorts and potentially longer videos later |\n| **Instagram professional account** | Yes | Publish Reels for the same brand |\n| **GitHub account** | Yes | Store and run the automation |\n| **AI provider account** | Eventually | Generate scripts and possibly narration; we’ll choose one after testing costs |\n| **Facebook Page** | Useful later | Another place to share videos and potentially help with Meta integrations |\n| **X account** | Optional | Share shorter written posts; we can start manually without committing to its API |\n| **ayushtyagi.dev** | Later | Optional brand page; your portfolio can stay as it is |\n\nTry to choose the same brand name and handle on YouTube and Instagram. You can reserve matching handles on Facebook and X without committing to use them immediately.\n\nFor **automatic publishing**, the system needs your authorisation to access the accounts:\n\n- **YouTube:** a Google Cloud project, the YouTube Data API enabled, and an OAuth connection to your channel. YouTube documents that uploads require account authorisation. [YouTube API setup](https://developers.google.com/youtube/v3/getting-started)\n- **Instagram/Facebook:** a Meta developer setup and the appropriate permissions for the account and publishing method we choose. I’d check the exact requirements when we build that connection.\n- **AI generation:** an API key from the provider we select. A regular AI chat subscription does not necessarily include API usage.\n\nYou don’t need to create API keys yet, and **don’t paste passwords or API keys into this chat**. I can guide you through securely connecting them when they’re needed.\n\nFor the budget, I’d keep **CAD $50 as a ceiling**, including taxes and any currency conversion. We can test free tools first, then decide how much to spend on AI and voice generation. GitHub scheduling has limits, so we’ll verify it works for the video workflow before relying on it.\n\nThe first decision is the **account name**. Do you already have one in mind, or should I suggest some for an AI-tools content brand?",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190aa-d6a2-7142-a79e-99b98cb09243",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793428477,
+      "completedAt": 1793428480,
+      "durationMs": 2618,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190aa-d710-71c2-ad03-c64e498410a8",
+          "content": [
+            {
+              "type": "text",
+              "text": "i have url too ayushtyagi.dev\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae58bff0900819b90fa2ddf3c47fe8d",
+          "text": "Great—we can use **ayushtyagi.dev** as the website for the content brand. GitHub Pages supports custom domains, so it may be possible to host the site there without a separate hosting bill.\n\nIf you already use the domain for something, we can put the content site on a subdomain such as **ai.ayushtyagi.dev**. That would also let you keep your existing site.\n\nDo you currently have a website or email running on ayushtyagi.dev? That will determine which DNS records we need to preserve.",
+          "phase": "final_answer"
+        }
+      ]
+    }
+  ]
+}

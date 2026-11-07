@@ -1,0 +1,41 @@
+{
+  "observed_utc": "2026-11-06T23:08:52.568315+00:00",
+  "provider": "Buffer",
+  "refresh_lag_hours": 5,
+  "observations": [
+    {
+      "post": "DfYx38_lrFh",
+      "age_ui": "18 hours",
+      "views": 0,
+      "reach": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "reactions": 0
+    },
+    {
+      "post": "DfTCEylEbF5",
+      "age_ui": "3 days",
+      "views": 4,
+      "reach": 1,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "reactions": 1
+    },
+    {
+      "post": "DfTCLAoDr77",
+      "age_ui": "3 days",
+      "views": 0,
+      "reach": 0,
+      "shares": 0,
+      "saves": 0,
+      "follows": 0,
+      "reactions": 1
+    }
+  ],
+  "follower_count": null,
+  "profile_visits": null,
+  "limits": "Displayed zeros recorded as zeros. Follower count and profile visits unavailable in this Buffer view. Ages differ; data delayed. No causal inference.",
+  "adjustment": "Continue testing a specific task/benefit hook; no evidence to pick a winning topic from this tiny sample."
+}

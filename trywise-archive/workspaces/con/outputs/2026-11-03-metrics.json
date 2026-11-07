@@ -1,0 +1,35 @@
+{
+  "observed_date": "2026-11-03",
+  "observation_context": "Browser execution about 4 PM America/Edmonton, later than trigger. Buffer refresh 5 hours ago.",
+  "handy_age_hours_approx": 22,
+  "handy": {
+    "reactions": 1,
+    "comments": 0,
+    "views": 0,
+    "shares": 0,
+    "saves": 0,
+    "follows": 0,
+    "reach": 0
+  },
+  "agent_memory": {
+    "reactions": 1,
+    "comments": 0,
+    "views": 0,
+    "shares": 0,
+    "saves": 0,
+    "follows": 0,
+    "reach": 0
+  },
+  "github_copilot": {
+    "reactions": 2,
+    "comments": 0,
+    "views": 1,
+    "shares": 0,
+    "saves": 0,
+    "follows": 0,
+    "reach": 1
+  },
+  "profile_visits": null,
+  "follower_count": null,
+  "interpretation": "Zeros explicitly displayed by Buffer; provider data delayed. No causal comparison or winner inferred."
+}

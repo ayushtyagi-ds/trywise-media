@@ -1,0 +1,40 @@
+{
+  "status": "sent",
+  "run": "nov6-vids",
+  "topic": "Google Vids free monthly video allowance, announced Nov 5",
+  "audience": "Nontechnical professionals and early builders planning a short visual",
+  "hook": "Make a short AI video for free",
+  "takeaway": "Plan a simple scene and inspect every frame; check quota first",
+  "hypothesis": "Test a concrete cost-and-task hook for accessible practical content; compare saves at similar ages without causal claims.",
+  "hashtags": [
+    "GoogleVids",
+    "AIVideo"
+  ],
+  "tested": false,
+  "visual": "Original drawn film strip, not generated video or product screenshot",
+  "destination": {
+    "organization": "6ae63280b965243d95d39b38",
+    "channel": "6ae636052f1f5ed648353cf5"
+  },
+  "sources": [
+    "https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids/",
+    "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+  ],
+  "sha256": {
+    "01.png": "11c0dd2274bddab75a4d37eb2770fcab15fe3ae50817a25ac55d9f6b9a57fddc",
+    "03.png": "ae8dbdd6f9f9acd525c32387e0798e2a098c6fe32cc25c7a02c16aaa3dae89e3",
+    "02.png": "b9aaf8fe1d6c66b438d80cd0fa7c306cfeb237a8028002b46f93e35d65ee26d6",
+    "05.png": "919852f3ea4da51de661515e1b8e7c704be192dee6c0d7b0795bfc897c80758f",
+    "04.png": "8342e7ceeae9a3f69b335c6bde984615c2d83ea56e6d53ae19b49c61924096d4"
+  },
+  "caption_digest": "7bd9510c918fecd94a57cbc98648e227b0a1404fd8c322112145f57defa68c25",
+  "submitted": true,
+  "visual_check": "Five final images inspected, no clipping; original illustrated cover",
+  "method": "Buffer composer / Now / Automatic",
+  "intent_utc": "2026-11-06T23:08:27.072639+00:00",
+  "buffer_id": "6aee5df9ec406dc8710d39b0",
+  "instagram_link": "https://www.instagram.com/p/DfawKXinTik/",
+  "verified_utc": "2026-11-06T23:09Z",
+  "buffer_ui_time": "Nov 6 5:09 PM",
+  "daily_count": 1
+}

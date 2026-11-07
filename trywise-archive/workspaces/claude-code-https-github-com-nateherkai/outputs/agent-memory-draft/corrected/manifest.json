@@ -1,0 +1,13 @@
+{
+  "status": "needs_review",
+  "source": {
+    "url": "https://github.com/thedotmack/claude-mem",
+    "domain": "github.com",
+    "title": "claude-mem: persistent context across sessions",
+    "published_at": "observed 2026-10-31"
+  },
+  "slides": 5,
+  "claims": [],
+  "review_notes": [],
+  "note": "Source excerpts do not verify all claims; review the original page, slides and caption."
+}

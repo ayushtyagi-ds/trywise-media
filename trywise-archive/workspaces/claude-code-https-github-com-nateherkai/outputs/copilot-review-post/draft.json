@@ -1,0 +1,11 @@
+{
+  "source": {"title": "How 3 Java Champions are using GitHub Copilot for increased productivity", "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/", "published_at": "2026-10-20"},
+  "slides": [
+    {"heading": "AI says ‘done’. Is it?", "body": "One developer asked Copilot to migrate 900 teaching slides. His next step is the part worth stealing."},
+    {"heading": "1 / Define what must survive", "body": "Before migration, Patrick Baumgartner gave the agent the target, constraints and examples—including interactive elements that had to keep working."},
+    {"heading": "2 / Demand evidence", "body": "He compared screenshots and generated PDFs, then checked interactive animations side by side. The goal: catch changes a text diff might miss."},
+    {"heading": "3 / Try this prompt", "body": "‘Plan this change. List what must stay the same. Suggest checks that would catch a regression. Show evidence for each check before saying it is complete.’"},
+    {"heading": "You still own the result", "body": "Review the evidence and test the important paths yourself. An AI-generated checklist is a starting point—not proof that the change works."}
+  ],
+  "caption": "A useful idea from GitHub’s interview with Java Champion Patrick Baumgartner: give an AI agent a way to prove its work.\n\nBaumgartner described migrating roughly 900 teaching slides with Copilot, then comparing screenshots, PDFs and interactive behavior. The prompt in this post is our adaptation of that idea, not a quote from the interview.\n\nWhat’s one check you always run after an AI-generated change?\n\nSource: GitHub Blog, October 20, 2026. This is a summary of the interview, not our own hands-on test."
+}

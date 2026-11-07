@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Collect conversation files and artifacts",
+    "id": "01a1b487-c533-7e73-8bca-7556aab338e1",
+    "pages": 1,
+    "turns": 2
+  },
+  {
+    "title": "Check email access",
+    "id": "01a1909e-8506-76d0-aaec-ab6112da86b6",
+    "pages": 1,
+    "turns": 3
+  },
+  {
+    "title": "Review Nate Herk\u2019s repositories",
+    "id": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+    "pages": 24,
+    "turns": 234
+  },
+  {
+    "title": "Continue Trywise AI setup",
+    "id": "01a19357-7a1c-73f2-95cf-e5c839234fc5",
+    "pages": 2,
+    "turns": 17
+  },
+  {
+    "title": "Email reading capability",
+    "id": "01a19354-1d12-7101-859f-cb1ae9a015f7",
+    "pages": 6,
+    "turns": 54
+  }
+]

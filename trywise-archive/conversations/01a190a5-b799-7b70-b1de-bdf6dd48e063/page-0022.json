@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "thread": {
+    "id": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+    "kind": "codex",
+    "hostId": "local",
+    "title": "Review Nate Herk’s repositories",
+    "preview": "Claude Code\nhttps://github.com/nateherkai\nif i gave you this link what you can do about it i want some info about this account repos?\n\nRan 3 commands\nPulled it straight from GitHub’s public API. Here’s what’s there.\n\nAccount: nateherkai — “Nate Herk”\nCreated 2026-01-09, 2,158 followers, following 0, no bio/company/location/email set\n18 public repos, 0 gists\nProfile is basically an AI-tooling content/course channel — most repos are Claude Code / Codex skills, plugins and student templates\nRepos, by stars\nStars\tForks\tRepo\tLang\tWhat it is\n4,173\t600\tscroll-craft\tJS\tAgent skill for scroll-driven immersive websites; also a Claude Code plugin\n2,336\t578\therk-edit-kit\tHTML\tVideo/Reels/Shorts editing with Codex or Claude Code — 15 skills, transcript-driven cuts, 406 motion-graphics cards\n1,773\t505\tAIS-OS\tJS\t“AI Operating System” starter kit; skills /onboard, /audit, /link, /level-up, /3d-brain\n1,321\t306\troast-room\tJS\tSeven AI advisor personas debate a business decision live in Claude Code\n748\t204\ttoken-dashboard\tPython\tTurns Claude Code JSONL transcripts into local cost/hotspot analytics\n402\t126\tsnagtime\tTS\t—\n106\t24\thuman-speak\tPython\t—\n66\t19\ta-bunch-of-skills\tHTML\tCustom Claude Code skills collection\n49\t5\tclaude-code-mods\tJS\tCache Keeper, Recording Mode, Goal Meter, Collision Guard\n47\t15\thyperframes-video-pipeline\tHTML\tDeprecated — merged into his student kit\n32\t10\tgpt-image-2-vs-nano-banana-2\tTS\tImage-model benchmark judged by Claude Opus 4.7; course template\n17\t6\tadvisor-tool-demo\tHTML\tDemo of Anthropic’s Advisor Tool (beta), cost/quality across Haiku/Sonnet/Opus\n3–7 each\t\tclaudewebtest, instant-ugc-app, brand-assets, fitcoach-ai-app, blender-website, dash\tmixed\tSmall/undescribed side projects from Jan–Mar 2026\nTotal ≈ 12.1k stars across the account, and the top five repos are ~85% of it. Nothing is archived or a fork. Activity pattern: a burst of small app repos in Jan–Mar 2026, then from April onward the big skill/plugin releases, with the most recent being roast-room (Oct 10) and claude-code-mods (Oct 2).\n\nWhat else I can do with a link like this, if useful: clone any repo and read/review the actual code, summarize a specific skill’s implementation, diff one against your own portal’s setup, pull its commit history or contributors, check open issues/PRs, or list who it depends on. Just name the repo — scroll-craft and token-dashboard are the two most likely to be relevant to what you’re building.\n\nhe is running a lot of ai things can you check can you run these stuff just yes or no or you need something additonal?\n\nRan 5 commands\nChecked your machine against what each repo actually needs.\n\nYour toolchain: Node 24.7, npm 11.5, Python 3.13, git ✅ — missing ffmpeg/ffprobe, gh, uv, deno, bun. No AI provider API keys set in the environment.\n\nRepo\tCan I run it?\tWhat’s missing\ntoken-dashboard\tYes\tNothing. Pure Python 3.8+, no pip install, no keys. Reads your own Claude Code sessions — would work on this repo’s history right now\nclaude-code-mods\tYes\tNothing. Plain JS mods, install as a Claude Code plugin\nhuman-speak\tYes\tNothing. Skill files + a Python validator script\na-bunch-of-skills\tYes\tNothing — it’s just skill markdown + scripts\nAIS-OS\tYes\tNothing. Markdown context framework + JS scripts\nroast-room\tYes, partly\tRuns in “viewer” mode with zero keys (default). Its self-driving api mode needs ANTHROPIC_API_KEY (~25 calls/council); /newroaster portraits need a KIE_AI_API_KEY\nscroll-craft\tYes, partly\tFull build works bring-your-own-assets with no key. AI image/video generation needs KIE_AI_API_KEY (paid — ~520 credits for a six-act page)\nsnagtime\tYes, probably\tFull Next.js + Prisma app. Needs npm install, SQLite demo DB, and a few generated secrets from .env.example. No external AI keys; Google Calendar is opt-in\nherk-edit-kit\tNo, not yet\tNeeds FFmpeg + ffprobe (missing) and Chrome/Chromium. Its no-footage fixture then runs keyless; real transcription needs ELEVENLABS_API_KEY (or OpenAI/Groq), generation needs KIE_API_KEY. Also a 460 MB clone\nhyperframes-video-pipeline\tSkip\tDeprecated, merged into his student kit\nthe 6 small ones\tn/a\tUndescribed personal side projects, nothing to run\nShort version: 5 of them I can run right now with nothing added. 3 more run in their free/keyless mode and only need paid keys for AI generation. snagtime needs a normal install + local secrets. Only herk-edit-kit is actually blocked, on brew install ffmpeg.\n\nWant me to start with token-dashboard? It’s zero-setup and would immediately show you where tokens are going on this portal project.\n\nthen how these people earn that much?\n\nSearched web YouTube RPM 2026 tech AI finance niche revenue per 1000 views creator ad share vs Instagram X payouts 9 results\nFair question — and the answer is that they don’t earn it where you’re planning to post.\n\nThe platform gap is roughly 1,000×\nPlatform\tWhat it pays\nYouTube (tech/AI)\t~$5–20 per 1,000 views, typically ~$13 US\nX\t~$8–30 per million impressions\nInstagram\teffectively nothing for feed posts\nSame unit: YouTube pays about $13,000 per million views. X pays about $20. That’s not a gap you optimise your way across — it’s a different business.\n\nSo when you see an AI automation person doing well, they’re a YouTuber. Instagram and X are leftovers they repurpose into, which is literally what Nate’s pipeline does — the YouTube video is the asset, the social posts are offcuts.\n\nBut even YouTube ads are the small line\nRough estimate of Nate’s stack — these are inferred from public numbers, not verified:\n\nSource\tEstimate\nAAS+ paid community (~3,100–3,500 × $99/mo)\t~$300K+/mo\nYouTube AdSense (43.7M lifetime views, ~$13 RPM)\t~$40K/mo\nSponsorships (Hostinger, ClickUp, Lovable, ElevenLabs, n8n)\tsizeable, lumpy\nAffiliate/referral (Blotato, n8n, Hostinger)\trecurring\nClient work (“Blotato is also a client of mine”)\tproject-based\nInstagram + X\t≈ $0\nThe community is the business. Everything else is marketing for it. ~90% of the money comes from a thing that isn’t on any social platform.\n\nThe number that should decide your strategy\n450,000 free community members → ~3,100 paying = 0.7% conversion.\n\nRun that backwards for a $10K/month target:\n\nLow-ticket model (his): $10K/mo ÷ $99 = ~100 members → at 0.7% needs ~14,000 free members → needs ~100K+ YouTube subscribers\nHigh-ticket model (yours): $10K/mo = 2 client contracts at $5K → at a similar conversion rate, needs ~400 engaged followers\nSame money. About 250× less audience. That’s the entire reason I keep pointing you at expertise content over news — not taste, arithmetic.\n\nTwo things nobody mentions\nTiming. He started September 2024 and hit 230K in nine months. That was the n8n/AI-agent hype window, as an early mover in an exploding category with almost no competition. There are now thousands of AI automation channels. The model still works; that arbitrage doesn’t repeat.\n\nSurvivorship. For every Nate, thousands ran the identical playbook and got nothing. You only ever see the winner, which makes the strategy look far more reliable than it is.\n\nThe one transferable lesson\nHis content is an ad for his product, and they’re the same subject. Teach n8n → sell an n8n community. Teach Blotato → earn the affiliate commission. The content creates the exact desire his offer satisfies.\n\nThis is the real reason tech news can’t pay: there’s nothing to sell at the end of “OpenAI announced a thing.” No offer fits it. Whereas “here’s the RLS trap that silently disabled our access control” ends naturally at “…and I do this for hire” — and your contact page already exists.\n\nWant me to map your specific path to a first $1,000, or skip ahead and start building?\n\nThese people don't earn on Instagram or X — YouTube pays ~$13 per 1,000 views where X pays ~$8–30 per million, and the real money is a paid community: roughly 3,100 members at $99/mo. That model needs a ~450K free funnel to feed it.\n\ncan you do something about this????????",
+    "status": {
+      "type": "idle"
+    },
+    "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+    "createdAt": 1793428141,
+    "updatedAt": 1794029992
+  },
+  "page": {
+    "order": "newest_first",
+    "limit": 10,
+    "nextCursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":224,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}",
+    "hasMore": true
+  },
+  "turns": [
+    {
+      "id": "01a190c8-df47-7c83-8a1c-314f3d786fb6",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793430445,
+      "completedAt": 1793430448,
+      "durationMs": 2779,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190c8-e00d-7522-9355-319bc2f4d690",
+          "content": [
+            {
+              "type": "text",
+              "text": "i acciedently made it how tore do it?\n"
+            }
+          ]
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae593af421c819b85ea7b800114ad31",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae593af6748819bac6f01b49d1a88ef",
+          "text": "If you accidentally created the channel with the wrong name, you can **rename it**—you don’t need to start over.\n\n1. Open [YouTube Studio](https://studio.youtube.com/) and sign in to the account you used.\n2. Select **Customization** in the left menu.\n3. Open **Profile**.\n4. Change the **Name** and, if you want, the **Handle**.\n5. Click **Publish**.\n\nYouTube allows you to change your channel name and handle twice within a 14-day period. The new name can take a little time to appear everywhere. [YouTube’s instructions](https://support.google.com/youtube/answer/2657964)\n\nIf you meant you accidentally created an **extra channel** and want to remove it, tell me before deleting anything and I’ll guide you through identifying the right one.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190c8-115e-75c0-83cf-6e87bd5438bd",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793430393,
+      "completedAt": 1793430396,
+      "durationMs": 3166,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190c8-11a6-7bc0-a911-59f56734b860",
+          "content": [
+            {
+              "type": "text",
+              "text": "idea to product doesn't work \n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae5937aede8819ba4d22f9e52b9a658",
+          "text": "Try **Ideas Into Products**. It has the same meaning and sounds natural.\n\nOther options in that style:\n\n- **Ideas Made Real** — `@ideasmadereal`\n- **Thoughts Into Things** — `@thoughtsintothings`\n- **From Idea to Launch** — `@fromideatolaunch`\n- **The Idea Workshop** — `@theideaworkshop`\n- **Ideas to Action AI** — `@ideastoactionai`\n\nMy pick is **Ideas Made Real**—it’s short and gives you room to cover more than just products.\n\nI haven’t checked their availability. Is YouTube rejecting the **channel name**, the **handle**, or both?",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190c7-d324-73f0-a842-cc74b63c99c2",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793430377,
+      "completedAt": 1793430379,
+      "durationMs": 2332,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190c7-d3f6-7401-9dc4-d8480fa7fb03",
+          "content": [
+            {
+              "type": "text",
+              "text": "**Idea to Products?**\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae5936adfa0819bb607108f9dc1d104",
+          "text": "**Idea to Product** sounds more natural than **Idea to Products**. It suggests taking one idea and turning it into a finished product, which fits your channel well.\n\nI’d use:\n\n- **Channel name:** Idea to Product\n- **Handle to try:** `@ideatoproduct`\n- **Tagline:** “Turning ideas into products with AI.”\n\nIf the handle is taken, try `@idea2product` or `@ideatoproductai`. I haven’t verified their availability.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190c4-eb83-7a31-b2df-0a4d16300200",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793430186,
+      "completedAt": 1793430195,
+      "durationMs": 8173,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190c4-ec02-7173-87da-d038ea974172",
+          "content": [
+            {
+              "type": "text",
+              "text": "something like thought to product suggest me some names\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae592ada454819b9fcf4820daf03d49",
+          "text": "I like that direction—it captures turning an idea into something real. Here are some options:\n\n- **Thought to Product**\n- **Idea to Product**\n- **Thought to Launch**\n- **Idea to Launch**\n- **Thought to Built**\n- **Idea to Creation**\n- **Think to Build**\n- **From Idea to Reality**\n- **Imagine to Make**\n- **Thought to Thing**\n\nMy pick is **Idea to Product**. It’s simple, easy to remember, and leaves room for videos about AI tools, websites, apps, and automation.\n\nFor the handle, try `@ideatoproduct` or `@idea2product`. I haven’t checked whether they’re available.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190c0-dc8f-72e3-85f8-7800fde49300",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429920,
+      "completedAt": 1793429923,
+      "durationMs": 2888,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190c0-dcc6-70c3-b22b-184d02f55697",
+          "content": [
+            {
+              "type": "text",
+              "text": "This name can't be used for your YouTube channel. Try again with a different name.\n"
+            }
+          ]
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae591a216f4819b92f3776808e694db",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae591a2305c819b8d7fab14786bdb51",
+          "text": "YouTube is rejecting the **channel name itself**, so let’s try a different one. The message doesn’t tell us why it was rejected.\n\nTry **Built With AI** as the channel name, with `@builtwithai` as the handle. If either is unavailable, here are a few alternatives:\n\n- **Build With AI Studio** — `@buildwithaistudio`\n- **The AI Buildroom** — `@theaibuildroom`\n- **Idea Into Build** — `@ideaintobuild`\n- **Make It With AI** — `@makeitwithai`\n\nMy pick is **The AI Buildroom**: it’s distinctive and fits your plan to test and build things. I haven’t verified whether the name or handle is available on YouTube.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190c0-7e59-7940-9029-dd660410375b",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429896,
+      "completedAt": 1793429898,
+      "durationMs": 2140,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190c0-7efa-7113-84ba-af9464538a50",
+          "content": [
+            {
+              "type": "text",
+              "text": "Build With Prompt\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae5918a2a24819baed981cee8659eb6",
+          "text": "**Build With Prompt** works! It’s clear and tells people the channel is about making things with AI.\n\nTry setting up:\n\n- **Channel name:** Build With Prompt\n- **Handle:** `@buildwithprompt`\n- **Tagline:** “Turn ideas into useful things with AI.”\n\nI haven’t checked whether the handle is available. If it’s taken, you could try `@buildwithpromptai` or `@buildwithpromptstudio`.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190bf-9276-7690-80ca-1397f624d505",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429836,
+      "completedAt": 1793429839,
+      "durationMs": 3493,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190bf-92d7-7bc2-84d5-70b46a2d5056",
+          "content": [
+            {
+              "type": "text",
+              "text": "you can leave prompt suggest me something else too please\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae5914dcbb4819ba34b722841f00a3a",
+          "text": "Absolutely. Here are some single-word names that aren’t tied to prompts:\n\n- **Buildwise** — practical and easy to understand\n- **Tryvora** — suggests trying and exploring\n- **Makevia** — creative and flexible\n- **Tinkerly** — playful and hands-on\n- **Workora** — suited to tools and productivity\n- **Idevo** — short, inspired by ideas\n- **Toolvera** — a fit for testing tools\n\nMy favourite is **Tryvora**: it’s memorable and gives you room to cover AI, automation, and whatever else you decide to explore.\n\nTry `@tryvora` on YouTube. I haven’t checked whether it’s available.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190bf-130c-7bb1-a160-0096ef381645",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429803,
+      "completedAt": 1793429806,
+      "durationMs": 2350,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190bf-1349-7b21-8fcb-6e744d6007b8",
+          "content": [
+            {
+              "type": "text",
+              "text": "Any single name?\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae5912d3130819bacdc8d120ccde157",
+          "text": "How about **Promptara**? It’s a single word, easy to say, and has a connection to prompts.\n\nOther options:\n\n- **Buildora**\n- **Promptivo**\n- **Ideonix**\n- **Promptlyst**\n- **Makentra**\n\nMy pick is **Promptara**. Try `@promptara` on YouTube; I haven’t verified whether it’s available.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190be-7b98-7c12-8e2c-026f6c7be960",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429765,
+      "completedAt": 1793429769,
+      "durationMs": 4522,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190be-7bd7-7bb0-a0e2-636171bea9c5",
+          "content": [
+            {
+              "type": "text",
+              "text": "Prompt to Product also not avaliable \n"
+            }
+          ]
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae591076e98819bbc79ad51677c25c4",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae591078820819bb7b35a8b56248339",
+          "text": "Let’s find something more distinctive. Try these as **channel names and handles**:\n\n1. **Prompt to Launch** — `@prompttolaunch`\n2. **Prompt to Built** — `@prompttobuilt`\n3. **Prompt & Make** — `@promptandmake`\n4. **Idea to AI** — `@ideatoai`\n5. **Prompt to Project** — `@prompttoproject`\n6. **Make It With AI** — `@makeitwithai`\n7. **Prompt to Progress** — `@prompttoprogress`\n8. **Built From a Prompt** — `@builtfromaprompt`\n\nMy favourite is **Prompt to Launch**: it’s easy to remember and works for tools, websites, workflows, and AI experiments.\n\nI haven’t verified these handles, so check your favourites on YouTube. If the exact handle is taken, you could try adding `ai` or `studio`, such as `@prompttolaunchai`.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a190bd-59db-7d60-8a5b-823f47b63faa",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793429690,
+      "completedAt": 1793429699,
+      "durationMs": 8792,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a190bd-5a44-79a2-b140-adc19b9ffd3e",
+          "content": [
+            {
+              "type": "text",
+              "text": "Promp2product\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae590be876c819b81cb6cb983cd8dee",
+          "text": "**Promp2Product** is a cool choice. It suggests turning an idea into something useful, and it gives you room to cover AI tools, automation, and building projects.\n\nOne small detail: **“Promp” is missing the final “t” in “prompt.”** Was that intentional? Both can work:\n\n- **Promp2Product** — distinctive and a little shorter.\n- **Prompt2Product** — easier for people to spell when they hear it.\n\nI’d choose **Prompt2Product** for ease of finding and sharing it. Try `@prompt2product` as the handle; I haven’t checked its availability. You can still use **trywiseai@gmail.com** to manage the account.",
+          "phase": "final_answer"
+        }
+      ]
+    }
+  ]
+}

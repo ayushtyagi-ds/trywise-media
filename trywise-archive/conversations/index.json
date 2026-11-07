@@ -1,0 +1,57 @@
+[
+  {
+    "id": "01a1b487-c533-7e73-8bca-7556aab338e1",
+    "kind": "codex",
+    "projectId": null,
+    "hostId": "local",
+    "status": "active",
+    "cwd": "/Users/phoenix/Documents/ChatGPT/Trywise AI",
+    "updatedAt": 1794030260,
+    "title": "Collect conversation files and artifacts",
+    "summary": "Put this folder’s files, conversation, and generated artifacts into a repository"
+  },
+  {
+    "id": "01a1909e-8506-76d0-aaec-ab6112da86b6",
+    "kind": "codex",
+    "projectId": "c961bf85-39ff-4ac7-84bb-cd660a92240c",
+    "hostId": "local",
+    "status": "idle",
+    "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/can-x20",
+    "updatedAt": 1794030103,
+    "title": "Check email access",
+    "summary": "Determine whether email tools are connected and available"
+  },
+  {
+    "id": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+    "kind": "codex",
+    "projectId": "c961bf85-39ff-4ac7-84bb-cd660a92240c",
+    "hostId": "local",
+    "status": "idle",
+    "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+    "updatedAt": 1794029992,
+    "title": "Review Nate Herk’s repositories",
+    "summary": "Summarize nateherkai GitHub account, public repositories, stars, and project themes"
+  },
+  {
+    "id": "01a19357-7a1c-73f2-95cf-e5c839234fc5",
+    "kind": "codex",
+    "projectId": "c961bf85-39ff-4ac7-84bb-cd660a92240c",
+    "hostId": "local",
+    "status": "idle",
+    "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/con",
+    "updatedAt": 1794029975,
+    "title": "Continue Trywise AI setup",
+    "summary": "Resume the Trywise AI setup"
+  },
+  {
+    "id": "01a19354-1d12-7101-859f-cb1ae9a015f7",
+    "kind": "codex",
+    "projectId": "c961bf85-39ff-4ac7-84bb-cd660a92240c",
+    "hostId": "local",
+    "status": "notLoaded",
+    "cwd": "/Users/phoenix/Desktop/StartUp TNT/startup-tnt-investor-portal",
+    "updatedAt": 1793438486,
+    "title": "Email reading capability",
+    "summary": "can you read my emails from here?"
+  }
+]

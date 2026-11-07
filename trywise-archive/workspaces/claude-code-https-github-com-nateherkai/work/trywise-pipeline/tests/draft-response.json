@@ -1,0 +1,11 @@
+{
+  "slides": [
+    {"heading":"An illustrative update", "body":"A fictional product has an export feature."},
+    {"heading":"What changed", "body":"The sample release note describes a plain text export."},
+    {"heading":"Who can use it", "body":"The sample says it is available to example testers."},
+    {"heading":"Takeaway", "body":"Check the original release note before making decisions."}
+  ],
+  "caption":"Illustrative demo of source-grounded drafting; verify before sharing.",
+  "claims":[{"text":"The product can export plain text.","evidence":"the product can export plain text."}],
+  "review_notes":["Fictional example; do not publish as news."]
+}

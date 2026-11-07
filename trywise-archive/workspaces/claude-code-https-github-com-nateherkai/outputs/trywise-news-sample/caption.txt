@@ -1,0 +1,3 @@
+Google announced new file editing and preview features in the Gemini app on October 29, 2026. PDF preview and editing are available on web and mobile; Google says the other listed formats are web-only. Check your account for access and verify AI-made changes. This is a summary of Google's announcement, not a hands-on test.
+
+Source: https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-02",
+  "status": "sent",
+  "topic": "Local dictation before an AI prompt",
+  "hook": "Speak your next AI prompt",
+  "hashtags": [
+    "VoiceToText",
+    "AIProductivity"
+  ],
+  "audience": "People who prefer speaking to typing prompts",
+  "takeaway": "Transcribe locally, check the transcript, then choose what text to share",
+  "hypothesis": "Test an image-led cover for practical utility; compare saves/shares only at comparable ages without causal claims.",
+  "source": "https://github.com/cjpais/Handy",
+  "source_checked": "2026-11-02",
+  "channel_id": "6ae636052f1f5ed648353cf5",
+  "buffer_post_id": "6ae92c27f66eb6d310d1b28a",
+  "images": {
+    "01.png": "11f1c61010ba38c7f10a7f01a55d31965d5a6b22ca9f73b5fd520a4b96abdce9",
+    "03.png": "34b5f5ae60ec092b53ca98ff2f83a17012acf6405ad24d1b1c4f93eead830ba5",
+    "02.png": "945b6ec2edf2e9c42a0bdd12aa62ee3be0580f5c5a1299f77b67fd4fe8ed48a8",
+    "05.png": "6a471a07988f0941cc70b4de4c9fe26abea6fce674ddc004a12ee5e2c39c1146",
+    "04.png": "39c4fc19c87f336aadc45067a07ee63524757a28082be0ea930c397de07c0f55"
+  },
+  "caption_sha256": "6a319ddc44ead71b6ceff42b8ffb6ac8281e9f0ce538c09fcd6b45522c60f73a",
+  "metrics_24h": null,
+  "metrics_72h": null,
+  "metrics_note": "Unavailable until observed; missing is not zero.",
+  "delivery_route": "Signed-in Buffer composer, My organization, @trywiseai",
+  "visual_check": "All five slides inspected; no clipping; original illustrated cover labelled.",
+  "buffer_ui_time": "November 2, 2026 6:34 PM America/Edmonton",
+  "note": "Actual browser submission time differs from heartbeat trigger time. Buffer accepted one submission; do not retry or duplicate.",
+  "instagram_link": "https://www.instagram.com/p/DfQm14-EaKb/",
+  "published_local": "2026-11-02 18:35 America/Edmonton",
+  "verification": "Buffer Post Details says Published on Nov 2, 6:35 PM and supplies Instagram link. Five images. Browser route used because Buffer connector absent in this run."
+}

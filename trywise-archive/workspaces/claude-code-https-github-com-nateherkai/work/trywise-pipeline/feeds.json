@@ -1,0 +1,20 @@
+{
+  "feeds": [
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/"
+    },
+    {
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml"
+    },
+    {
+      "name": "GitHub Blog AI and ML",
+      "url": "https://github.blog/ai-and-ml/feed/"
+    }
+  ]
+}

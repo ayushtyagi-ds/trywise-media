@@ -1,0 +1,41 @@
+{
+  "run": "nov4-0918-heartbeat",
+  "date": "2026-11-04",
+  "status": "withheld_overlap_saved_draft",
+  "topic": "Daily roundup: Guided Learning and Copilot in Air",
+  "cover_hook": "2 AI updates worth knowing",
+  "audience": "Curious professionals, educators and builders",
+  "takeaway": "Know what changed and check eligibility before trying one small task",
+  "hypothesis": "Start a dated two-story briefing; measure saves and shares at comparable post ages, no causal claims.",
+  "hashtags": [
+    "AINews",
+    "LearningWithAI"
+  ],
+  "window": "Announcements Nov 3, checked Nov 4, 2026 Edmonton",
+  "sources": [
+    "https://blog.google/products-and-platforms/products/education/guided-learning-uk-japan/",
+    "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/"
+  ],
+  "selection_note": "Fresh AI and broader tech search; excluded unverified acquisition and financial/political stories, old releases, and topics already posted. Two selected rather than padding to five.",
+  "channel_id": "6ae636052f1f5ed648353cf5",
+  "buffer_post_id": "6aebcfa1827edfb2d75cafee",
+  "gemini_reconciliation": {
+    "id": "6ae67f3d5c164391063bfb95",
+    "status": "sent",
+    "local_time": "Nov 3 19:25",
+    "instagram_link": "https://www.instagram.com/p/DfTRXsODJlf/"
+  },
+  "images": {
+    "01.png": "efbe028e9ee03a2608bd54acd5ac02591093bbdc7aa69fa9492df83dd3732bd0",
+    "02.png": "3e56c2683eb5e46c6e7a0ba4b75f73f1e8ce1bbb07957fe2563b66175b23fa00",
+    "03.png": "50cc3e219a54d548322d384e360cf7911328fa4c407b162a3a9c84bf3c9cd058",
+    "04.png": "42dbf7bda5698037f383edb4354f4de6ea2af2ff2ba41da241b2eeb3059494a6",
+    "05.png": "3c8e0dd90886b2b86528e7b4731eb54144fc9547763b9a9a3982cef0fbbcb193"
+  },
+  "caption_sha256": "9d49ce93687ea7469e906d4e54cec4ac818e41b3588151f3edb9e94d49244adb",
+  "publish_attempted": false,
+  "do_not_publish": true,
+  "reason": "Final pre-click check detected another publisher sent an overlapping three-story roundup Nov 4 at 18:33, within minutes. Saved as draft with DO NOT PUBLISH note, no public submission by this run.",
+  "existing_roundup": "https://www.instagram.com/p/DfVwNldFjxs/",
+  "gemini_status": "Buffer confirmed sent Nov 3 at 19:25; https://www.instagram.com/p/DfTRXsODJlf/"
+}

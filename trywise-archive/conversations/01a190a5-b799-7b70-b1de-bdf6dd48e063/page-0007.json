@@ -1,0 +1,1270 @@
+{
+  "schemaVersion": 1,
+  "thread": {
+    "id": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+    "kind": "codex",
+    "hostId": "local",
+    "title": "Review Nate Herk’s repositories",
+    "preview": "Claude Code\nhttps://github.com/nateherkai\nif i gave you this link what you can do about it i want some info about this account repos?\n\nRan 3 commands\nPulled it straight from GitHub’s public API. Here’s what’s there.\n\nAccount: nateherkai — “Nate Herk”\nCreated 2026-01-09, 2,158 followers, following 0, no bio/company/location/email set\n18 public repos, 0 gists\nProfile is basically an AI-tooling content/course channel — most repos are Claude Code / Codex skills, plugins and student templates\nRepos, by stars\nStars\tForks\tRepo\tLang\tWhat it is\n4,173\t600\tscroll-craft\tJS\tAgent skill for scroll-driven immersive websites; also a Claude Code plugin\n2,336\t578\therk-edit-kit\tHTML\tVideo/Reels/Shorts editing with Codex or Claude Code — 15 skills, transcript-driven cuts, 406 motion-graphics cards\n1,773\t505\tAIS-OS\tJS\t“AI Operating System” starter kit; skills /onboard, /audit, /link, /level-up, /3d-brain\n1,321\t306\troast-room\tJS\tSeven AI advisor personas debate a business decision live in Claude Code\n748\t204\ttoken-dashboard\tPython\tTurns Claude Code JSONL transcripts into local cost/hotspot analytics\n402\t126\tsnagtime\tTS\t—\n106\t24\thuman-speak\tPython\t—\n66\t19\ta-bunch-of-skills\tHTML\tCustom Claude Code skills collection\n49\t5\tclaude-code-mods\tJS\tCache Keeper, Recording Mode, Goal Meter, Collision Guard\n47\t15\thyperframes-video-pipeline\tHTML\tDeprecated — merged into his student kit\n32\t10\tgpt-image-2-vs-nano-banana-2\tTS\tImage-model benchmark judged by Claude Opus 4.7; course template\n17\t6\tadvisor-tool-demo\tHTML\tDemo of Anthropic’s Advisor Tool (beta), cost/quality across Haiku/Sonnet/Opus\n3–7 each\t\tclaudewebtest, instant-ugc-app, brand-assets, fitcoach-ai-app, blender-website, dash\tmixed\tSmall/undescribed side projects from Jan–Mar 2026\nTotal ≈ 12.1k stars across the account, and the top five repos are ~85% of it. Nothing is archived or a fork. Activity pattern: a burst of small app repos in Jan–Mar 2026, then from April onward the big skill/plugin releases, with the most recent being roast-room (Oct 10) and claude-code-mods (Oct 2).\n\nWhat else I can do with a link like this, if useful: clone any repo and read/review the actual code, summarize a specific skill’s implementation, diff one against your own portal’s setup, pull its commit history or contributors, check open issues/PRs, or list who it depends on. Just name the repo — scroll-craft and token-dashboard are the two most likely to be relevant to what you’re building.\n\nhe is running a lot of ai things can you check can you run these stuff just yes or no or you need something additonal?\n\nRan 5 commands\nChecked your machine against what each repo actually needs.\n\nYour toolchain: Node 24.7, npm 11.5, Python 3.13, git ✅ — missing ffmpeg/ffprobe, gh, uv, deno, bun. No AI provider API keys set in the environment.\n\nRepo\tCan I run it?\tWhat’s missing\ntoken-dashboard\tYes\tNothing. Pure Python 3.8+, no pip install, no keys. Reads your own Claude Code sessions — would work on this repo’s history right now\nclaude-code-mods\tYes\tNothing. Plain JS mods, install as a Claude Code plugin\nhuman-speak\tYes\tNothing. Skill files + a Python validator script\na-bunch-of-skills\tYes\tNothing — it’s just skill markdown + scripts\nAIS-OS\tYes\tNothing. Markdown context framework + JS scripts\nroast-room\tYes, partly\tRuns in “viewer” mode with zero keys (default). Its self-driving api mode needs ANTHROPIC_API_KEY (~25 calls/council); /newroaster portraits need a KIE_AI_API_KEY\nscroll-craft\tYes, partly\tFull build works bring-your-own-assets with no key. AI image/video generation needs KIE_AI_API_KEY (paid — ~520 credits for a six-act page)\nsnagtime\tYes, probably\tFull Next.js + Prisma app. Needs npm install, SQLite demo DB, and a few generated secrets from .env.example. No external AI keys; Google Calendar is opt-in\nherk-edit-kit\tNo, not yet\tNeeds FFmpeg + ffprobe (missing) and Chrome/Chromium. Its no-footage fixture then runs keyless; real transcription needs ELEVENLABS_API_KEY (or OpenAI/Groq), generation needs KIE_API_KEY. Also a 460 MB clone\nhyperframes-video-pipeline\tSkip\tDeprecated, merged into his student kit\nthe 6 small ones\tn/a\tUndescribed personal side projects, nothing to run\nShort version: 5 of them I can run right now with nothing added. 3 more run in their free/keyless mode and only need paid keys for AI generation. snagtime needs a normal install + local secrets. Only herk-edit-kit is actually blocked, on brew install ffmpeg.\n\nWant me to start with token-dashboard? It’s zero-setup and would immediately show you where tokens are going on this portal project.\n\nthen how these people earn that much?\n\nSearched web YouTube RPM 2026 tech AI finance niche revenue per 1000 views creator ad share vs Instagram X payouts 9 results\nFair question — and the answer is that they don’t earn it where you’re planning to post.\n\nThe platform gap is roughly 1,000×\nPlatform\tWhat it pays\nYouTube (tech/AI)\t~$5–20 per 1,000 views, typically ~$13 US\nX\t~$8–30 per million impressions\nInstagram\teffectively nothing for feed posts\nSame unit: YouTube pays about $13,000 per million views. X pays about $20. That’s not a gap you optimise your way across — it’s a different business.\n\nSo when you see an AI automation person doing well, they’re a YouTuber. Instagram and X are leftovers they repurpose into, which is literally what Nate’s pipeline does — the YouTube video is the asset, the social posts are offcuts.\n\nBut even YouTube ads are the small line\nRough estimate of Nate’s stack — these are inferred from public numbers, not verified:\n\nSource\tEstimate\nAAS+ paid community (~3,100–3,500 × $99/mo)\t~$300K+/mo\nYouTube AdSense (43.7M lifetime views, ~$13 RPM)\t~$40K/mo\nSponsorships (Hostinger, ClickUp, Lovable, ElevenLabs, n8n)\tsizeable, lumpy\nAffiliate/referral (Blotato, n8n, Hostinger)\trecurring\nClient work (“Blotato is also a client of mine”)\tproject-based\nInstagram + X\t≈ $0\nThe community is the business. Everything else is marketing for it. ~90% of the money comes from a thing that isn’t on any social platform.\n\nThe number that should decide your strategy\n450,000 free community members → ~3,100 paying = 0.7% conversion.\n\nRun that backwards for a $10K/month target:\n\nLow-ticket model (his): $10K/mo ÷ $99 = ~100 members → at 0.7% needs ~14,000 free members → needs ~100K+ YouTube subscribers\nHigh-ticket model (yours): $10K/mo = 2 client contracts at $5K → at a similar conversion rate, needs ~400 engaged followers\nSame money. About 250× less audience. That’s the entire reason I keep pointing you at expertise content over news — not taste, arithmetic.\n\nTwo things nobody mentions\nTiming. He started September 2024 and hit 230K in nine months. That was the n8n/AI-agent hype window, as an early mover in an exploding category with almost no competition. There are now thousands of AI automation channels. The model still works; that arbitrage doesn’t repeat.\n\nSurvivorship. For every Nate, thousands ran the identical playbook and got nothing. You only ever see the winner, which makes the strategy look far more reliable than it is.\n\nThe one transferable lesson\nHis content is an ad for his product, and they’re the same subject. Teach n8n → sell an n8n community. Teach Blotato → earn the affiliate commission. The content creates the exact desire his offer satisfies.\n\nThis is the real reason tech news can’t pay: there’s nothing to sell at the end of “OpenAI announced a thing.” No offer fits it. Whereas “here’s the RLS trap that silently disabled our access control” ends naturally at “…and I do this for hire” — and your contact page already exists.\n\nWant me to map your specific path to a first $1,000, or skip ahead and start building?\n\nThese people don't earn on Instagram or X — YouTube pays ~$13 per 1,000 views where X pays ~$8–30 per million, and the real money is a paid community: roughly 3,100 members at $99/mo. That model needs a ~450K free funnel to feed it.\n\ncan you do something about this????????",
+    "status": {
+      "type": "idle"
+    },
+    "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+    "createdAt": 1793428141,
+    "updatedAt": 1794029992
+  },
+  "page": {
+    "order": "newest_first",
+    "limit": 10,
+    "nextCursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":5456,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}",
+    "hasMore": true
+  },
+  "turns": [
+    {
+      "id": "01a194c4-d6e7-71c2-be8e-3ff04805136c",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793497290,
+      "completedAt": 1793497335,
+      "durationMs": 44907,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a194c4-d8e3-73a2-a63a-cb797be1384f",
+          "content": [
+            {
+              "type": "text",
+              "text": "\n<in-app-browser-context source=\"ambient-ui-state\">\nThis block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.\n# In app browser:\n- The user has the in-app browser open with 4 tabs.\n- Current URL: https://publish.buffer.com/home\n</in-app-browser-context>\n\n## My request:\nmake a new profile picture cool picture inspired by indian philophy\n"
+            }
+          ]
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae698ce5e10819ba27f62896cae5cf0",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae698ce6704819bac3da5bb893b79e2",
+          "text": "I’ll create a distinctive profile picture for Trywise AI, drawing on Indian philosophy and keeping it clear at Instagram’s small profile size.",
+          "phase": "commentary"
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-34f16e41-9313-4858-9cc1-37131e6a7b19",
+          "command": "/bin/zsh -lc 'cat /Users/phoenix/.codex/skills/.system/imagegen/SKILL.md'",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae698d0daac819b9bc2ee4648935bc0",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae698d0e31c819ba5a97e4ab71e4a46",
+          "text": "I’m using the image generation skill to design a symbol inspired by the lotus as a metaphor for learning and growth.",
+          "phase": "commentary"
+        },
+        {
+          "type": "imageGeneration",
+          "id": "exec-71db4aca-a5ef-4fd8-91ae-535d85615c43",
+          "status": "completed",
+          "revisedPrompt": "Use case: logo-brand. Create a premium, futuristic social media profile image for Trywise AI, an AI learning brand. Concept: a bold, elegant abstract lotus emerging from a single luminous point of insight, inspired respectfully by Indian philosophical themes of knowledge and growth, subtly integrating circuit-like geometry into the petals. Strong memorable silhouette, sophisticated geometric symmetry, warm saffron gold and electric teal highlights against deep midnight navy. Modern crafted vector-like emblem with subtle dimensional glow, not a photograph. Center the entire mark within the central 70% of a square canvas so it reads clearly in a circular Instagram crop and at tiny sizes. No text, no letters, no watermark, no religious deity or sacred symbols. Luxurious, distinctive, uncluttered.",
+          "savedPath": "/Users/phoenix/.codex/generated_images/01a190a5-b799-7b70-b1de-bdf6dd48e063/exec-71db4aca-a5ef-4fd8-91ae-535d85615c43.png"
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-34007f84-ba92-44ba-9cd4-cae1e5086fae",
+          "command": "/bin/zsh -lc 'cp /Users/phoenix/.codex/generated_images/01a190a5-b799-7b70-b1de-bdf6dd48e063/exec-71db4aca-a5ef-4fd8-91ae-535d85615c43.png /Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/trywise-indian-lotus-profile.png'",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae698f6aa14819bbc1d60916ed9e46a",
+          "text": "Here’s a new Trywise AI profile picture: a futuristic lotus inspired by ideas of knowledge and growth, with subtle circuit patterns for the AI connection.\n\n[Download the profile picture](/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/trywise-indian-lotus-profile.png)\n\nI created it with the built-in image generator using a centered lotus, saffron and teal accents, and a dark background.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a194c2-98da-73d3-81dd-2ccf0767c820",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793497143,
+      "completedAt": 1793497196,
+      "durationMs": 53260,
+      "items": [
+        {
+          "type": "userMessage",
+          "id": "01a194c2-9b18-7210-ad2d-8e9d47805e70",
+          "content": [
+            {
+              "type": "text",
+              "text": "\n<in-app-browser-context source=\"ambient-ui-state\">\nThis block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.\n# In app browser:\n- The user has the in-app browser open with 4 tabs.\n- Current URL: https://github.com/ayushtyagi-ds/trywise-media/commit/b883a490950fa264e13911f30736552bd42dd86f\n</in-app-browser-context>\n\n## My request:\nput a transcript of our chat too please so you can read everytime where are we\n"
+            }
+          ]
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae69839fd4c819b813a5013095e20cd",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae6983a527c819b96cc79951392e4a8",
+          "text": "I’ll save a handoff in the workspace with what we’ve decided, what’s connected, and what still needs testing, so we can pick up without reconstructing everything.",
+          "phase": "commentary"
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-92b01627-a3db-4cc1-a8cf-f6bbe2f394e8",
+          "command": "/bin/zsh -lc 'cat /Users/phoenix/Documents/Codex/2026-10-31/con/outputs/trywise-setup-status.md'",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6983d296c819bad6f0d85bdd0df12",
+          "summary": []
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-eaf8ee90-d046-473a-bb05-ff6b10c584d0",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 20,
+            "maxOutputCharsPerItem": 5000
+          },
+          "status": "failed",
+          "durationMs": 102
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-45d536ff-9154-4d60-845b-52816c166afb",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 5000
+          },
+          "status": "completed",
+          "durationMs": 259
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae698428d84819bbd21f257913208c6",
+          "summary": []
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae69847b5e4819bb285fad098cd0396",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae6984a26a4819b96fdeb600912d5eb",
+          "text": "I’ll keep the transcript local because the GitHub media repository is public. I’m also adding a short checkpoint that future sessions can read quickly.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-9f6efbf1-7f4d-4a93-a37e-441c302ccad5",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 10000
+          },
+          "status": "completed",
+          "durationMs": 309
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6984ced5c819ba75a1e35ba362f6a",
+          "summary": []
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-229c4997-729a-4d01-95b3-f52241105087",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 50000
+          },
+          "status": "failed",
+          "durationMs": 113
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae698527a8c819b86cf9ab4c03563c1",
+          "summary": []
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-f004e79e-e877-4f71-8894-a504c3659430",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000
+          },
+          "status": "completed",
+          "durationMs": 120
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-2b81c7f0-503c-4251-8380-140ad3b7985d",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":5418,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 36
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-de12d00b-14bd-4e81-b6eb-784ab264210a",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":4997,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 179
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-7c4ca8a7-ff3b-4eaa-99ef-422465b41f87",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":4743,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 137
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-3c20b4e8-a3f4-4cb3-8508-87822e187a5a",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":4333,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 62
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-fe62f0a4-22ce-44cf-8fbf-e73253a2d3e9",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":4051,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 96
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-0ee296b6-afd6-4c3a-85b2-e7abd93a5828",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":3803,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 95
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-a9b35abe-8db5-4344-a148-3335986d949f",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":3327,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 37
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-f206fb3e-2be3-44e1-9ea7-f3654ca939cf",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":2776,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 106
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-89d45610-d3f8-4ae3-be35-fd0117a070d7",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":2202,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 61
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-140b29ba-56a9-4812-8c3a-27f94985801b",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":1076,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 40
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-1a5581d4-9c7b-41bd-9488-5f937ec70cfd",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":891,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 99
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-0a5c399e-ace8-4856-a865-0ec2930ced1a",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":760,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 60
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-295780c6-3fe1-4dc3-961e-b0b9401f70ce",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":552,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 31
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-9d95dade-9d83-4d3c-9b53-8d2c516a769a",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":427,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 94
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-0d126dd4-b10b-43ac-ac1f-04fdd8fb64f9",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":318,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 78
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-ee0fcaa8-5662-47e0-9043-b3456da57b9a",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":214,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 40
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-fd20286b-e9c1-46d1-87cc-0f190864c1e1",
+          "server": "codex_app",
+          "tool": "read_thread",
+          "arguments": {
+            "threadId": "01a190a5-b799-7b70-b1de-bdf6dd48e063",
+            "turnLimit": 10,
+            "maxOutputCharsPerItem": 20000,
+            "cursor": "{\"requestedThreadId\":\"01a190a5-b799-7b70-b1de-bdf6dd48e063\",\"rolloutOrdinal\":66,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}"
+          },
+          "status": "completed",
+          "durationMs": 54
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-ad927b2b-cb67-4ab8-9685-89cdd13d7a11",
+          "command": "/bin/zsh -lc \"cat > '/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/trywise-chat-transcript.md' <<'CODEX_CHAT_EXPORT_723f0d'\n# Trywise AI — conversation export\n\nExported from the Codex thread; 18 pages; all available pages requested.\nText of user messages and assistant final responses as returned by the thread reader. Attachments, tool output, and intermediate messages are omitted; individual items may be truncated by the reader.\n\n## User\n\nClaude Code\nhttps://github.com/nateherkai\nif i gave you this link what you can do about it i want some info about this account repos?\n\nRan 3 commands\nPulled it straight from GitHub’s public API. Here’s what’s there.\n\nAccount: nateherkai — “Nate Herk”\nCreated 2026-01-09, 2,158 followers, following 0, no bio/company/location/email set\n18 public repos, 0 gists\nProfile is basically an AI-tooling content/course channel — most repos are Claude Code / Codex skills, plugins and student templates\nRepos, by stars\nStars\tForks\tRepo\tLang\tWhat it is\n4,173\t600\tscroll-craft\tJS\tAgent skill for scroll-driven immersive websites; also a Claude Code plugin\n2,336\t578\therk-edit-kit\tHTML\tVideo/Reels/Shorts editing with Codex or Claude Code — 15 skills, transcript-driven cuts, 406 motion-graphics cards\n1,773\t505\tAIS-OS\tJS\t“AI Operating System” starter kit; skills /onboard, /audit, /link, /level-up, /3d-brain\n1,321\t306\troast-room\tJS\tSeven AI advisor personas debate a business decision live in Claude Code\n748\t204\ttoken-dashboard\tPython\tTurns Claude Code JSONL transcripts into local cost/hotspot analytics\n402\t126\tsnagtime\tTS\t—\n106\t24\thuman-speak\tPython\t—\n66\t19\ta-bunch-of-skills\tHTML\tCustom Claude Code skills collection\n49\t5\tclaude-code-mods\tJS\tCache Keeper, Recording Mode, Goal Meter, Collision Guard\n47\t15\thyperframes-video-pipeline\tHTML\tDeprecated — merged into his student kit\n32\t10\tgpt-image-2-vs-nano-banana-2\tTS\tImage-model benchmark judged by Claude Opus 4.7; course template\n17\t6\tadvisor-tool-demo\tHTML\tDemo of Anthropic’s Advisor Tool (beta), cost/quality across Haiku/Sonnet/Opus\n3–7 each\t\tclaudewebtest, instant-ugc-app, brand-assets, fitcoach-ai-app, blender-website, dash\tmixed\tSmall/undescribed side projects from Jan–Mar 2026\nTotal ≈ 12.1k stars across the account, and the top five repos are ~85% of it. Nothing is archived or a fork. Activity pattern: a burst of small app repos in Jan–Mar 2026, then from April onward the big skill/plugin releases, with the most recent being roast-room (Oct 10) and claude-code-mods (Oct 2).\n\nWhat else I can do with a link like this, if useful: clone any repo and read/review the actual code, summarize a specific skill’s implementation, diff one against your own portal’s setup, pull its commit history or contributors, check open issues/PRs, or list who it depends on. Just name the repo — scroll-craft and token-dashboard are the two most likely to be relevant to what you’re building.\n\nhe is running a lot of ai things can you check can you run these stuff just yes or no or you need something additonal?\n\nRan 5 commands\nChecked your machine against what each repo actually needs.\n\nYour toolchain: Node 24.7, npm 11.5, Python 3.13, git ✅ — missing ffmpeg/ffprobe, gh, uv, deno, bun. No AI provider API keys set in the environment.\n\nRepo\tCan I run it?\tWhat’s missing\ntoken-dashboard\tYes\tNothing. Pure Python 3.8+, no pip install, no keys. Reads your own Claude Code sessions — would work on this repo’s history right now\nclaude-code-mods\tYes\tNothing. Plain JS mods, install as a Claude Code plugin\nhuman-speak\tYes\tNothing. Skill files + a Python validator script\na-bunch-of-skills\tYes\tNothing — it’s just skill markdown + scripts\nAIS-OS\tYes\tNothing. Markdown context framework + JS scripts\nroast-room\tYes, partly\tRuns in “viewer” mode with zero keys (default). Its self-driving api mode needs ANTHROPIC_API_KEY (~25 calls/council); /newroaster portraits need a KIE_AI_API_KEY\nscroll-craft\tYes, partly\tFull build works bring-your-own-assets with no key. AI image/video generation needs KIE_AI_API_KEY (paid — ~520 credits for a six-act page)\nsnagtime\tYes, probably\tFull Next.js + Prisma app. Needs npm install, SQLite demo DB, and a few generated secrets from .env.example. No external AI keys; Google Calendar is opt-in\nherk-edit-kit\tNo, not yet\tNeeds FFmpeg + ffprobe (missing) and Chrome/Chromium. Its no-footage fixture then runs keyless; real transcription needs ELEVENLABS_API_KEY (or OpenAI/Groq), generation needs KIE_API_KEY. Also a 460 MB clone\nhyperframes-video-pipeline\tSkip\tDeprecated, merged into his student kit\nthe 6 small ones\tn/a\tUndescribed personal side projects, nothing to run\nShort version: 5 of them I can run right now with nothing added. 3 more run in their free/keyless mode and only need paid keys for AI generation. snagtime needs a normal install + local secrets. Only herk-edit-kit is actually blocked, on brew install ffmpeg.\n\nWant me to start with token-dashboard? It’s zero-setup and would immediately show you where tokens are going on this portal project.\n\nthen how these people earn that much?\n\nSearched web YouTube RPM 2026 tech AI finance niche revenue per 1000 views creator ad share vs Instagram X payouts 9 results\nFair question — and the answer is that they don’t earn it where you’re planning to post.\n\nThe platform gap is roughly 1,000×\nPlatform\tWhat it pays\nYouTube (tech/AI)\t~\"'$5–20 per 1,000 views, typically ~$13 US\nX\t~$8–30 per million impressions\nInstagram\teffectively nothing for feed posts\nSame unit: YouTube pays about $13,000 per million views. X pays about $20. That’s not a gap you optimise your way across — it’s a different business.\n\nSo when you see an AI automation person doing well, they’re a YouTuber. Instagram and X are leftovers they repurpose into, which is literally what Nate’s pipeline does — the YouTube video is the asset, the social posts are offcuts.\n\nBut even YouTube ads are the small line\nRough estimate of Nate’s stack — these are inferred from public numbers, not verified:\n\nSource\tEstimate\nAAS+ paid community (~3,100–3,500 × $99/mo)\t~$300K+/mo\nYouTube AdSense (43.7M lifetime views, ~$13 RPM)\t~$40K/mo\nSponsorships (Hostinger, ClickUp, Lovable, ElevenLabs, n8n)\tsizeable, lumpy\nAffiliate/referral (Blotato, n8n, Hostinger)\trecurring\nClient work (“Blotato is also a client of mine”)\tproject-based\nInstagram + X\t≈ $0\nThe community is the business. Everything else is marketing for it. ~90% of the money comes from a thing that isn’t on any social platform.\n\nThe number that should decide your strategy\n450,000 free community members → ~3,100 paying = 0.7% conversion.\n\nRun that backwards for a $10K/month target:\n\nLow-ticket model (his): $10K/mo ÷ $99 = ~100 members → at 0.7% needs ~14,000 free members → needs ~100K+ YouTube subscribers\nHigh-ticket model (yours): $10K/mo = 2 client contracts at $5K → at a similar conversion rate, needs ~400 engaged followers\nSame money. About 250× less audience. That’s the entire reason I keep pointing you at expertise content over news — not taste, arithmetic.\n\nTwo things nobody mentions\nTiming. He started September 2024 and hit 230K in nine months. That was the n8n/AI-agent hype window, as an early mover in an exploding category with almost no competition. There are now thousands of AI automation channels. The model still works; that arbitrage doesn’t repeat.\n\nSurvivorship. For every Nate, thousands ran the identical playbook and got nothing. You only ever see the winner, which makes the strategy look far more reliable than it is.\n\nThe one transferable lesson\nHis content is an ad for his product, and they’re the same subject. Teach n8n → sell an n8n community. Teach Blotato → earn the affiliate commission. The content creates the exact desire his offer satisfies.\n\nThis is the real reason tech news can’t pay: there’s nothing to sell at the end of “OpenAI announced a thing.” No offer fits it. Whereas “here’s the RLS trap that silently disabled our access control” ends naturally at “…and I do this for hire” — and your contact page already exists.\n\nWant me to map your specific path to a first $1,000, or skip ahead and start building?\n\nThese people don'\"'t earn on Instagram or X — YouTube pays ~\"'$13 per 1,000 views where X pays ~$8–30 per million, and the real money is a paid community: roughly 3,100 members at $99/mo. That model needs a ~450K free funnel to feed it.\n\ncan you do something about this????????\n\n\n\n\n## Assistant\n\n**Yes—I can help you build something you can sell, demonstrate it, and create content that brings potential customers to it.** Running his repos is only one part of that.\n\nOne correction: the pasted earnings calculations were too confident. His official site currently advertises AIS+ at **$129/month**, but member counts × price do **not** establish actual revenue or profit. [Source](https://aiautomationsociety.ai/)\n\nHere’s a concrete starting offer we could develop:\n\n> **“I help small service businesses respond to new enquiries and follow up on unanswered quotes.”**\n\nI can do the technical and preparation work:\n\n- Build a working demo using sample enquiries.\n- Add enquiry tracking, draft replies, and follow-up reminders.\n- Prepare a short demonstration video script and sales page copy.\n- Draft personalised outreach for you to review.\n- Help connect the system to a customer’s tools once they authorise access.\n\nA **$500 paid pilot** could be an initial pricing experiment—not an earnings promise. First we would establish whether a business actually needs it and will pay.\n\nYou would handle customer conversations, approve commitments, and provide any required accounts. I can build and help deliver; I can’t guarantee customers or income.\n\n**Which direction did you mean: selling AI services to businesses, or building an AI content channel like his?**\n\n## User\n\nIm thinking to bulding an Ai content accounts like he made which just run autonamistlly with minimum my intervation\n\n\n## Assistant\n\n**Yes—we can build an AI content account where the system does most of the production and you review a small batch each week.** That fits your goal much better than selling client services.\n\nBut we haven’t established that Nate’s business runs autonomously. His public site describes a team, live support, and teaching. Automating content production can reduce your workload; it doesn’t automatically reproduce his business.\n\nMy suggested starting format is a **faceless account demonstrating useful AI workflows**: one problem, a real demonstration, and a result. For example: “Can this free AI tool turn a messy invoice into a usable spreadsheet?”\n\nThe system would work like this:\n\n| Stage | Automated work | Your involvement |\n|---|---|---|\n| Research | Find topics and collect original sources | Pick the direction initially |\n| Demonstration | Test workflows and capture results where possible | Handle exceptions |\n| Production | Draft scripts, generate narration, edit video, add captions | Review finished batches |\n| Publishing | Schedule approved posts through connected tools | Connect your accounts |\n| Improvement | Summarise performance and suggest next topics | Make occasional decisions |\n\n**A reasonable initial target is three original videos per week**, adapted for YouTube Shorts and Instagram Reels. We could aim for a 30–60 minute weekly review once the workflow is stable, but we’d need to measure the actual workload.\n\nThe key is producing useful, original demonstrations. YouTube says repetitive or mass-produced content is ineligible for monetization; automation needs to preserve originality. [YouTube’s clarification](https://support.google.com/youtube/thread/356734251?hl=en&msgid=428596150)\n\nI can build the workflow, scripts, templates, and sample content. Ongoing unattended operation needs an always-on runner, connected publishing accounts, and potentially paid AI services. Earnings would remain uncertain.\n\n**Two things will determine the setup: do you want it completely faceless with an AI voice, and what monthly budget are you comfortable testing—$0, $50, or $150 USD?**\n\n## User\n\nwith complete faceless stuff with 50$ budget can we do it?\n\n\n## Assistant\n\n**Yes—assuming US$50 per month, we can build a completely faceless AI content workflow.** We should start with one brand and three short videos per week, then reuse them across platforms.\n\nThe format: **real AI tool demonstrations, screen recordings, synthetic narration, and captions.** This keeps production costs manageable.\n\nProposed monthly spending limits—not verified vendor quotes:\n\n| Item | Budget |\n|---|---:|\n| AI research, scripts, and narration | $20 |\n| Hosting and scheduling, if needed | $10 |\n| Reserve for usage and other costs | $20 |\n| Video editing | Free local tools |\n\nAt first, your computer would run production. Unattended work would require it to stay awake and connected, or we’d need hosting within that budget.\n\nI can prepare the workflow, editing templates, scripts, and publishing integration. You would connect your accounts and review finished videos. **Aim for minimal involvement after setup; expect more involvement while we test the first batches.**\n\nThe $50 funds a production experiment. It doesn’t guarantee views or income.\n\nMy suggested first series is **“AI tools tested on everyday tasks”**—showing what actually worked, what failed, and the result. We can prepare the first three samples before buying subscriptions.\n\n## User\n\nfor hosting can github pages work?\n\n\n## Assistant\n\n**Yes, GitHub can help us stay within the $50 budget**, with two parts playing different roles:\n\n- **GitHub Pages** can host a free public website for the content brand—links, articles, and information about your videos. It can’t run the AI production software itself because it serves static websites. [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)\n- **GitHub Actions** can run scheduled jobs to research topics, generate scripts, and potentially render videos or upload them through connected services. We’d need to test whether the complete workflow fits its usage limits and the publishing platforms’ requirements.\n\nA practical setup would be **GitHub Actions for production + GitHub Pages for the brand website**. AI services would still have their own costs, and account connections would be needed for publishing.\n\nOne limitation: scheduled Actions can be delayed, and schedules in public repositories are disabled after 60 days without repository activity. We’d also need somewhere appropriate to store finished videos; Pages should be treated as the website, not the video library. [GitHub scheduling documentation](https://docs.github.com/en/enterprise-server%403.18/actions/reference/workflows-and-actions/events-that-trigger-workflows)\n\nSo yes: **we can start with GitHub and potentially avoid a separate hosting bill.**\n\n## User\n\ni have url too ayushtyagi.dev\n\n\n## Assistant\n\nGreat—we can use **ayushtyagi.dev** as the website for the content brand. GitHub Pages supports custom domains, so it may be possible to host the site there without a separate hosting bill.\n\nIf you already use the domain for something, we can put the content site on a subdomain such as **ai.ayushtyagi.dev**. That would also let you keep your existing site.\n\nDo you currently have a website or email running on ayushtyagi.dev? That will determine which DNS records we need to preserve.\n\n## User\n\nyes i do my portfolio website, we do it later though but what exactly i need though \n50 cad \none instagram account \none twitter account \none facebook or something what should and where should i put it what api or something like that you do need \nyoutube or something?\n\n\n## Assistant\n\nYes. With **CAD $50 per month**, I’d start with **YouTube and Instagram**, then add Facebook and X only if we see a reason to. One video can be adapted for YouTube Shorts and Instagram Reels, so you don’t need to produce separate content for each platform.\n\nHere’s what you’d need:\n\n| What | Needed now? | Purpose |\n|---|---|---|\n| **Google account + YouTube channel** | Yes | Publish Shorts and potentially longer videos later |\n| **Instagram professional account** | Yes | Publish Reels for the same brand |\n| **GitHub account** | Yes | Store and run the automation |\n| **AI provider account** | Eventually | Generate scripts and possibly narration; we’ll choose one after testing costs |\n| **Facebook Page** | Useful later | Another place to share videos and potentially help with Meta integrations |\n| **X account** | Optional | Share shorter written posts; we can start manually without committing to its API |\n| **ayushtyagi.dev** | Later | Optional brand page; your portfolio can stay as it is |\n\nTry to choose the same brand name and handle on YouTube and Instagram. You can reserve matching handles on Facebook and X without committing to use them immediately.\n\nFor **automatic publishing**, the system needs your authorisation to access the accounts:\n\n- **YouTube:** a Google Cloud project, the YouTube Data API enabled, and an OAuth connection to your channel. YouTube documents that uploads require account authorisation. [YouTube API setup](https://developers.google.com/youtube/v3/getting-started)\n- **Instagram/Facebook:** a Meta developer setup and the appropriate permissions for the account and publishing method we choose. I’d check the exact requirements when we build that connection.\n- **AI generation:** an API key from the provider we select. A regular AI chat subscription does not necessarily include API usage.\n\nYou don’t need to create API keys yet, and **don’t paste passwords or API keys into this chat**. I can guide you through securely connecting them when they’re needed.\n\nFor the budget, I’d keep **CAD $50 as a ceiling**, including taxes and any currency conversion. We can test free tools first, then decide how much to spend on AI and voice generation. GitHub scheduling has limits, so we’ll verify it works for the video workflow before relying on it.\n\nThe first decision is the **account name**. Do you already have one in mind, or should I suggest some for an AI-tools content brand?\n\n## User\n\nfirst tell me the channel name for everything please can you do that do a proper research what topics should i touch first what should i do tell me \n\n\n## Assistant\n\nMy recommendation is **Trywise AI**.\n\nIt’s short, easy to say, and fits a channel that **tries AI tools on real tasks and shows whether they’re worth using**. It also leaves room to grow into tutorials, comparisons, templates, and a community later.\n\n**Suggested handle:** `@trywiseai`  \n**Tagline:** “AI tools, tested on real work.”  \n**Bio:** “We test AI tools and workflows on everyday tasks. Clear demos, honest results, and practical takeaways.”\n\nI searched for the name, but I **haven’t confirmed that the handle is available** on YouTube, Instagram, X, or Facebook, or completed a trademark search. Check those before committing. If it’s taken, try `@trywise.ai` or `@trywiseaitools` where the platform allows it.\n\nYour domain could eventually be **ai.ayushtyagi.dev** or link to the channel from your portfolio. There’s no need to change it now.\n\n## What the channel should cover\n\nI recommend targeting **people who want to use AI for work but don’t know which tools are actually useful**: freelancers, small business owners, creators, and curious beginners.\n\nThere is evidence that these are useful problems to cover. US Census research identifies **writing, document analysis, and information search** among leading generative AI tasks in businesses. A UK government survey also found that a lack of a clear business case is a barrier for many non-adopters. That suggests an opportunity for clear demonstrations with visible results—though the research does **not** prove a new channel will grow. [US Census research](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html) · [UK AI adoption survey](https://www.gov.uk/government/publications/ai-adoption-survey-2026/ai-adoption-survey-report-2",
+          "commandTruncated": true,
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6985a8984819ba0fa5afc6e40f30d",
+          "summary": []
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-3118ae23-5d9f-45e0-8003-7b22c661ed7c",
+          "command": "/bin/zsh -lc \"rg --files -g AGENTS.md -g 'trywise-chat-transcript.md' /Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai\"",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 115
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6985d4374819ba6d9d818d2c3113d",
+          "summary": []
+        },
+        {
+          "type": "fileChange",
+          "id": "exec-5b49a71c-d7d4-4c83-988d-9b36dcca363c",
+          "status": "completed",
+          "changes": [
+            {
+              "path": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/AGENTS.md",
+              "kind": {
+                "type": "add"
+              }
+            },
+            {
+              "path": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/trywise-handoff.md",
+              "kind": {
+                "type": "add"
+              }
+            }
+          ]
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6986898b0819bbe1366a1d2b77b6b",
+          "summary": []
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-ffe73cb0-5732-4699-8d65-fa8cf718ea98",
+          "command": "/bin/zsh -lc 'wc -cm outputs/trywise-chat-transcript.md outputs/trywise-handoff.md AGENTS.md'",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae6986abde4819bbeda0f2fcfe83031",
+          "text": "Done. I saved a local [chat transcript](/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/trywise-chat-transcript.md) and a shorter [project handoff](/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/trywise-handoff.md) with the current setup, decisions, and next steps.\n\nI also added [AGENTS.md](/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/AGENTS.md) to direct future Codex sessions in this workspace to read the handoff first.\n\nThe transcript is a **snapshot** of user messages and assistant final replies; it omits attachments and tool outputs, and some long messages may be truncated. I kept it local because your media repository is public.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a194c0-5371-7b73-9bef-f7598e364814",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793496994,
+      "completedAt": 1793497076,
+      "durationMs": 81601,
+      "items": [
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae697a48a14819b820635cb3b4a3334",
+          "text": "I’ll check access to your new `trywise-media` repository, then test whether it can host the carousel images Buffer needs.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-c9c2476b-9c91-4fb7-bfb0-64e1a0c26657",
+          "server": "codex_apps",
+          "tool": "github.get_repo",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-media"
+          },
+          "status": "completed",
+          "durationMs": 519
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697a6fdc0819ba38d1bf7d6047b01",
+          "summary": []
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697a95c84819ba246e1ccbe2d68a3",
+          "summary": []
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-d8a3848c-346a-41cc-bdb7-592b8cb189e0",
+          "server": "codex_apps",
+          "tool": "github.create_file",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-media",
+            "path": "README.md",
+            "message": "Initialize Trywise AI public media repository",
+            "content": "# Trywise AI media\n\nPublic images for Trywise AI social posts. Files in this repository are publicly accessible.\n"
+          },
+          "status": "completed",
+          "durationMs": 1057
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697aff8b8819b81b737fe154561e3",
+          "summary": []
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-68188869-1126-4f6c-ad2f-6487a6e04b25",
+          "server": "codex_apps",
+          "tool": "github.fetch_commit",
+          "arguments": {
+            "repo_full_name": "ayushtyagi-ds/trywise-media",
+            "commit_sha": "96344082abd2091d41a132ee2b9362cf5a4618c3"
+          },
+          "status": "completed",
+          "durationMs": 554
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697b47d70819b81e0f272dfc4dda6",
+          "summary": []
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-9fd07afb-9dd2-46b0-bcbe-19e3614698a9",
+          "command": "/bin/zsh -lc 'ls -lh /Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/*.png'",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697b79a70819b91f5ee182f5b8dce",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae697b7dd5c819b939190681cbb019b",
+          "text": "The repository is public and the GitHub connection has write access. I’ve initialized it and will upload the prepared carousel images for a Buffer test.",
+          "phase": "commentary"
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-0ce3527a-f2d1-4fd8-b659-03fbb1d10981",
+          "command": "/bin/zsh -lc \"base64 -i '/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/01.png'\"",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-3c3870ca-05db-4079-a2e6-894209056c2a",
+          "command": "/bin/zsh -lc \"base64 -i '/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/04.png'\"",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-40835ef7-5c4e-4c64-9883-ff7ac62c520e",
+          "command": "/bin/zsh -lc \"base64 -i '/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/02.png'\"",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-0d34bafb-ebb7-49d4-b3b5-ada0dc09344a",
+          "command": "/bin/zsh -lc \"base64 -i '/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/05.png'\"",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-85911069-a9b5-4a90-84f4-bc87aad7832a",
+          "command": "/bin/zsh -lc \"base64 -i '/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/03.png'\"",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-d3f38ea3-9bb6-45fc-bc0a-7027c4394a66",
+          "server": "codex_apps",
+          "tool": "github.create_blob",
+          "argumentsPreview": {
+            "text": "{\"repository_full_name\":\"ayushtyagi-ds/trywise-media\",\"content\":\"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",
+            "truncated": true,
+            "originalChars": 97851
+          },
+          "status": "completed",
+          "durationMs": 749
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-b23b1bae-e798-446b-b31a-914bb2d2f7db",
+          "server": "codex_apps",
+          "tool": "github.create_blob",
+          "argumentsPreview": {
+            "text": "{\"repository_full_name\":\"ayushtyagi-ds/trywise-media\",\"content\":\"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",
+            "truncated": true,
+            "originalChars": 103071
+          },
+          "status": "completed",
+          "durationMs": 1002
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-7c085702-21c8-42fa-a471-938b05ba3821",
+          "server": "codex_apps",
+          "tool": "github.create_blob",
+          "argumentsPreview": {
+            "text": "{\"repository_full_name\":\"ayushtyagi-ds/trywise-media\",\"content\":\"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",
+            "truncated": true,
+            "originalChars": 89787
+          },
+          "status": "completed",
+          "durationMs": 885
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-183d34f6-e506-45dc-ae03-add0cd3b4b66",
+          "server": "codex_apps",
+          "tool": "github.create_blob",
+          "argumentsPreview": {
+            "text": "{\"repository_full_name\":\"ayushtyagi-ds/trywise-media\",\"content\":\"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",
+            "truncated": true,
+            "originalChars": 85723
+          },
+          "status": "completed",
+          "durationMs": 730
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-49b82bfd-78f2-4c59-8912-2942c3b422f6",
+          "server": "codex_apps",
+          "tool": "github.create_blob",
+          "argumentsPreview": {
+            "text": "{\"repository_full_name\":\"ayushtyagi-ds/trywise-media\",\"content\":\"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",
+            "truncated": true,
+            "originalChars": 86691
+          },
+          "status": "completed",
+          "durationMs": 781
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697cbb2b0819ba82334a639b5941b",
+          "summary": []
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-df7f3a6d-1503-4265-a08f-c7ef1b932381",
+          "server": "codex_apps",
+          "tool": "github.create_blob",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-media",
+            "content": "# Trywise AI media\n\nPublic images for Trywise AI social posts. Files in this repository are publicly accessible.\n",
+            "encoding": "utf-8"
+          },
+          "status": "completed",
+          "durationMs": 708
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-e4d539a0-3a3e-49f4-a8ae-790673b106ad",
+          "server": "codex_apps",
+          "tool": "github.create_tree",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-media",
+            "tree_elements": [
+              {
+                "path": "README.md",
+                "mode": "100644",
+                "type": "blob",
+                "sha": "cbd28bada471a5526cffcf105db8f55d3d20cec0"
+              },
+              {
+                "path": "2026-10-31/agent-memory/01.png",
+                "mode": "100644",
+                "type": "blob",
+                "sha": "6c2bbe0b0523f68887a030499560720bba260c3f"
+              },
+              {
+                "path": "2026-10-31/agent-memory/02.png",
+                "mode": "100644",
+                "type": "blob",
+                "sha": "05fbc695655e1a12126ca72ac9eb5adc679d02c5"
+              },
+              {
+                "path": "2026-10-31/agent-memory/03.png",
+                "mode": "100644",
+                "type": "blob",
+                "sha": "96371151f3ce39980e17c0c91040325b082e96d5"
+              },
+              {
+                "path": "2026-10-31/agent-memory/04.png",
+                "mode": "100644",
+                "type": "blob",
+                "sha": "9add0fcb1240af95b50b15d17e4d5cc91cfd7859"
+              },
+              {
+                "path": "2026-10-31/agent-memory/05.png",
+                "mode": "100644",
+                "type": "blob",
+                "sha": "54fedac03baf93a98a6a0dfad3b1083d7534218e"
+              }
+            ]
+          },
+          "status": "completed",
+          "durationMs": 772
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-d5483d90-d52b-445d-b85d-c19612146965",
+          "server": "codex_apps",
+          "tool": "github.create_commit",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-media",
+            "parent_sha": "96344082abd2091d41a132ee2b9362cf5a4618c3",
+            "tree_sha": "5c22456270111e5e32a0a31d8618996403976dcf",
+            "message": "Add agent memory carousel images"
+          },
+          "status": "completed",
+          "durationMs": 547
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-a52d24b8-c5f3-474b-aa74-ccbdc769db3c",
+          "server": "codex_apps",
+          "tool": "github.update_ref",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-media",
+            "branch_name": "main",
+            "sha": "b883a490950fa264e13911f30736552bd42dd86f",
+            "expected_sha": "96344082abd2091d41a132ee2b9362cf5a4618c3"
+          },
+          "status": "completed",
+          "durationMs": 1259
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697dff7f0819b979c3b808b700ff3",
+          "summary": []
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-420f41e2-a170-4f9c-8157-0e4b2649dc1b",
+          "command": "/bin/zsh -lc 'cat /Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/caption.txt'",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697e2cdd4819b8889d1dd6566da7c",
+          "summary": []
+        },
+        {
+          "type": "webSearch",
+          "id": "exec-db732073-8551-4c0d-8bd3-4ce750c3d7d8",
+          "query": "https://raw.githubusercontent.com/ayushtyagi-ds/trywise-media/b883a490950fa264e13911f30736552bd42dd86f/2026-10-31/agent-memory/01.png",
+          "action": {
+            "type": "openPage",
+            "url": "https://raw.githubusercontent.com/ayushtyagi-ds/trywise-media/b883a490950fa264e13911f30736552bd42dd86f/2026-10-31/agent-memory/01.png"
+          }
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697e60b2c819b8ddda0324f02afd4",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae697e64940819b87c35fc835aaf6e4",
+          "text": "The carousel images are now in the new public repository. I’ll test their direct URLs by creating a Buffer draft in **My organization**.",
+          "phase": "commentary"
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-b40a1576-feac-41ed-9deb-f448ae3ec7ca",
+          "command": "/bin/zsh -lc 'cat /Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai/outputs/agent-memory-draft/corrected/caption.txt'",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-76b119ef-452c-4bf5-af0d-a339984b8226",
+          "server": "buffer",
+          "tool": "create_post",
+          "arguments": {
+            "channelId": "6ae636052f1f5ed648353cf5",
+            "schedulingType": "automatic",
+            "saveToDraft": true,
+            "text": "A new AI coding session often means repeating yourself. One approach is to keep a short, reusable handoff of what happened and what comes next.\n\nThe claude-mem project describes an automated version of this idea. On October 31, GitHub’s Trending page listed it among the day’s popular repositories. We haven’t installed or tested it, so this isn’t a recommendation or review.\n\nThe handoff prompt on slide 4 is our own example. Check any memory tool’s storage, access and privacy settings before use.\n\nWhat context do you find yourself repeating to AI tools?\n\nSource: https://github.com/thedotmack/claude-mem",
+            "metadata": {
+              "instagram": {
+                "type": "post",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "assets": [
+              {
+                "image": {
+                  "url": "https://raw.githubusercontent.com/ayushtyagi-ds/trywise-media/b883a490950fa264e13911f30736552bd42dd86f/2026-10-31/agent-memory/01.png"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://raw.githubusercontent.com/ayushtyagi-ds/trywise-media/b883a490950fa264e13911f30736552bd42dd86f/2026-10-31/agent-memory/02.png"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://raw.githubusercontent.com/ayushtyagi-ds/trywise-media/b883a490950fa264e13911f30736552bd42dd86f/2026-10-31/agent-memory/03.png"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://raw.githubusercontent.com/ayushtyagi-ds/trywise-media/b883a490950fa264e13911f30736552bd42dd86f/2026-10-31/agent-memory/04.png"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://raw.githubusercontent.com/ayushtyagi-ds/trywise-media/b883a490950fa264e13911f30736552bd42dd86f/2026-10-31/agent-memory/05.png"
+                }
+              }
+            ]
+          },
+          "status": "completed",
+          "durationMs": 600
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697ec8d14819bb334651a8ad77808",
+          "summary": []
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-4c6d6284-4a7d-4b1b-bfb6-017c3a06a030",
+          "command": "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\np=Path('/Users/phoenix/Documents/Codex/2026-10-31/con/outputs/trywise-setup-status.md');s=p.read_text();s+='\\\\n## Public media host and agent-memory Buffer draft\\\\n\\\\nThe owner created and authorized public GitHub repository \"'`ayushtyagi-ds/trywise-media`. GitHub connector write access verified. Its `main` branch contains five publicly intended agent-memory images at `2026-10-31/agent-memory/` in commit `b883a490950fa264e13911f30736552bd42dd86f`. Buffer accepted all five immutable `raw.githubusercontent.com` URLs as 1080x1350 image assets in unscheduled Instagram draft `6ae697ea1ee172cd6dd31429`; this verifies draft ingestion, not Instagram publication. Avoid creating a duplicate; inspect and reuse this draft where timely and appropriate. For future original public carousel images, upload to this dedicated public repository through the GitHub connector, use commit-pinned raw URLs, verify Buffer assets, and reconcile before publishing. Never upload secrets or private data. GitHub Git Data blob supports base64 binary, tree/commit/ref operations can publish multiple files atomically; preserve existing files with the correct base tree and protect against concurrent ref changes.'\"\\\\n';p.write_text(s)\nPY\"",
+          "cwd": "/Users/phoenix/Documents/Codex/2026-10-31/claude-code-https-github-com-nateherkai",
+          "status": "completed",
+          "exitCode": 0,
+          "durationMs": 0
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697f15bd4819b8252816855fbe29b",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae697f34fc0819b91061f8528b63299",
+          "text": "Your [trywise-media repository](https://github.com/ayushtyagi-ds/trywise-media) is connected and working. I uploaded the five agent-memory carousel images and created a Buffer draft using their GitHub URLs. Buffer recognized all five images.\n\nThe draft is **not scheduled or published**. This confirms the image-hosting connection works through draft creation; the full unattended publishing flow still needs a live test. The separate Gemini carousel remains scheduled for November 3.\n\nThe repository setup and draft test took about a minute.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a194be-59df-7371-8bb2-907c0891e8fa",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793496865,
+      "completedAt": 1793496871,
+      "durationMs": 6129,
+      "items": [
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae69722dfac819b846dc5ff406dd500",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae69722e850819b82bb7a601df824b9",
+          "text": "I’ll check the media repository once more before resuming the upload test.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-57634bd3-8f58-4e59-b6c9-1722679bc3ff",
+          "server": "codex_apps",
+          "tool": "github.get_repo",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-ai-media"
+          },
+          "status": "failed",
+          "durationMs": 371
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae69726b6ac819bb5f8e489ecd0064f",
+          "text": "The goal is **blocked** again: GitHub still can’t access `trywise-ai-media`, and the Buffer browser was unavailable on the last check.\n\nPlease [create the public repository](https://github.com/new) with a README and grant the Codex GitHub app access. Then I can test uploading carousel images and continue the automated publishing setup.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a194be-2d56-7660-87c5-7627b7b95af3",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793496853,
+      "completedAt": 1793496865,
+      "durationMs": 11380,
+      "items": [
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae69717b60c819bb890fe6050a3722c",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae69717e3c0819bb4b84cd2c7ab08ad",
+          "text": "I’ll check whether either the GitHub repository or the signed-in Buffer browser is available now.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-33d01266-934d-415b-8059-6d67e0509251",
+          "server": "codex_apps",
+          "tool": "github.get_repo",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-ai-media"
+          },
+          "status": "failed",
+          "durationMs": 580
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "call_f8ddef03fefc484ebf681a48a61e3f5e",
+          "server": "cua_repl",
+          "tool": "js",
+          "arguments": {
+            "code": "var tab = await cua.getTab({url:'https://publish.buffer.com/home'}, {browser:'iab'});",
+            "title": "Check Buffer browser access"
+          },
+          "status": "failed",
+          "durationMs": 4544
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae6972098d0819b8af42343f2694e64",
+          "text": "Neither upload route is available yet: GitHub can’t find `trywise-ai-media`, and the Buffer browser reports that it’s unavailable.\n\nPlease create the [public repository](https://github.com/new) and give the Codex GitHub app access. That will let me test the automated image-hosting route.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a194be-0501-70d1-acae-9ffd7c544102",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793496843,
+      "completedAt": 1793496853,
+      "durationMs": 10259,
+      "items": [
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae69710f774819bbebce7ae6c9a9570",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae697111e60819b9aaeb9c3d6852549",
+          "text": "I’ll check the GitHub connection again and continue the publishing setup if the media repository is available.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-494b6b16-7446-493d-879a-86d0db3d57ad",
+          "server": "codex_apps",
+          "tool": "github.get_repo",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-ai-media"
+          },
+          "status": "failed",
+          "durationMs": 439
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae697140b88819baa135375cce6eb74",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae697144998819bbb8a9f42227042ea",
+          "text": "The goal is active again, but GitHub still can’t find the media repository.\n\nPlease [create `trywise-ai-media` on GitHub](https://github.com/new), make it **public**, and select **Add a README**. Then grant the Codex GitHub app access to it. I can continue testing the automated image uploads once it’s available.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a1946a-5ba0-7210-803c-d0b9ef7c47f1",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793491360,
+      "completedAt": 1793491367,
+      "durationMs": 7250,
+      "items": [
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae681a2abc4819b9d05fed853d338d3",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae681a2ca2c819ba1124f61e485f116",
+          "text": "I’ll make one final check for the repository so I can resume the image-upload test if access is ready.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-49baadb6-ba15-4ea9-a773-5fd0536c48e3",
+          "server": "codex_apps",
+          "tool": "github.get_repo",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-ai-media"
+          },
+          "status": "failed",
+          "durationMs": 372
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae681a745bc819bbdc0e5502f9fcac4",
+          "text": "The goal is **blocked** until I can access a place to host new carousel images. GitHub still returns “not found” for `ayushtyagi-ds/trywise-ai-media`.\n\nPlease create that public repository and grant the Codex GitHub app access. Once it’s available, I can test the image-upload and Buffer publishing flow.\n\nThe Gemini carousel remains scheduled, and the existing research and publishing automations remain active.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a1946a-440d-76a1-8c23-9b7dd30dbbd6",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793491354,
+      "completedAt": 1793491360,
+      "durationMs": 5986,
+      "items": [
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6819cb9a0819b930dcf0e9b9057c8",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae6819d6bb0819bb1a7777e1bc05869",
+          "text": "I’ll recheck the media-hosting connection before continuing the publishing setup.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-341524a1-94a0-46d5-82ba-1a2d0c646859",
+          "server": "codex_apps",
+          "tool": "github.get_repo",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-ai-media"
+          },
+          "status": "failed",
+          "durationMs": 404
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae681a021b0819baed06123b687fb91",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae681a044c4819ba2a1124fcb60dda0",
+          "text": "The GitHub connection still can’t access `trywise-ai-media`. The next step is to create the repository and grant the Codex GitHub app access; then I can test automated image uploads.\n\nThe Gemini carousel remains scheduled in Buffer.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a1946a-26f1-74a2-b4dd-7c10a3d10179",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793491347,
+      "completedAt": 1793491354,
+      "durationMs": 7385,
+      "items": [
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6819527c8819b8392453400216ff2",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae68195c014819bb49c751fd9be728b",
+          "text": "I’ll check whether the media repository has become available to the GitHub connection.",
+          "phase": "commentary"
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-55930230-03ee-4378-bf95-a124fa370a67",
+          "server": "codex_apps",
+          "tool": "github.get_repo",
+          "arguments": {
+            "repository_full_name": "ayushtyagi-ds/trywise-ai-media"
+          },
+          "status": "failed",
+          "durationMs": 420
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae68199f4c8819b80671650dbfea9e7",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae6819a0558819b809c2efeb806f9d2",
+          "text": "The GitHub connection still can’t find `trywise-ai-media`. Once you’ve created the public repository and granted the Codex GitHub app access, I can test it as the image host for automated Buffer posts.\n\nThe Gemini carousel remains scheduled for November 3.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "id": "01a19469-faaa-7ae3-b775-251adf8e5746",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1793491335,
+      "completedAt": 1793491347,
+      "durationMs": 11289,
+      "items": [
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6818995f8819b922cc8fc9f229365",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae6818a00f8819b8ce5d73b7b9bdfdc",
+          "text": "I’ll check whether there’s an existing authorized place to host carousel images, which would let the publishing workflow send new posts to Buffer without relying on the browser upload dialog.",
+          "phase": "commentary"
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae6818c4b94819b91e98a4f848783a7",
+          "summary": []
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-df53503a-ebd5-4362-b4cd-db89c8463b58",
+          "server": "codex_apps",
+          "tool": "github.get_user_login",
+          "arguments": {},
+          "status": "completed",
+          "durationMs": 738
+        },
+        {
+          "type": "mcpToolCall",
+          "id": "exec-ca8f3787-61fe-4967-845e-e3453fa6e7e4",
+          "server": "codex_apps",
+          "tool": "github.list_repositories",
+          "arguments": {
+            "page_size": 100
+          },
+          "status": "completed",
+          "durationMs": 833
+        },
+        {
+          "type": "reasoning",
+          "id": "rs_06032a1d0fb570ac016ae681906a44819ba177c26c8ae4766c",
+          "summary": []
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_06032a1d0fb570ac016ae68191575c819b9996dc927899b1d1",
+          "text": "I checked your connected GitHub account. There isn’t a dedicated public Trywise AI repository available for hosting carousel images, and the GitHub integration I have can’t create one. Your portfolio repository is available, but I’ll leave it alone as you requested.\n\nTo give the workflow a reliable upload path, please create a **public GitHub repository named `trywise-ai-media`** and give the Codex GitHub app access to it. I can then test hosting the carousel images and sending their links to Buffer.\n\nThe Gemini post remains scheduled; the full unattended workflow is still unverified.",
+          "phase": "final_answer"
+        }
+      ]
+    }
+  ]
+}
