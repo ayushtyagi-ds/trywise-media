@@ -22,7 +22,7 @@ The local folder was empty before collection. Operating-system `.DS_Store` files
 
 ## Privacy and hosting
 
-This archive contains private conversations and account context. It is a local repository with no remote configured. It has not been uploaded to the existing public `trywise-media` repository or published elsewhere. A remote backup should use a separate private repository.
+This archive contains conversation transcripts and account context. After the owner explicitly confirmed that everything should be public, all 725 collected archive files were uploaded to `https://github.com/ayushtyagi-ds/trywise-media/tree/main/trywise-archive`. The existing repository files were preserved. The separate ChatGPT export gaps described above still apply.
 
 ## Completing the ChatGPT portion
 
